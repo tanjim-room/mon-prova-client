@@ -1,7 +1,7 @@
 import Logo from '../components/Logo';
 import Button from '../components/Button';
 import OutlinedButton from '../components/OutlinedButton';
-import Yoga from '../../public/yoga black.json';
+import Doctor from '../../public/Online Doctor.json';
 import Lottie from 'lottie-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -69,10 +69,10 @@ const DoctorLogin = () => {
                        </div>
                    </div>
    
-                   {/* Right Side - Illustration */}
+                   {/* Right Side Animation */}
                    <div className="hidden md:flex items-center justify-center bg-gradient-to-tr from-[#c3e1f1] to-[#76a4f1] p-6">
                        <Lottie
-                           animationData={Yoga}
+                           animationData={Doctor}
                        ></Lottie>
                    </div>
                </div>

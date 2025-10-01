@@ -54,7 +54,9 @@ const PatientLogin = () => {
 
                         {/* Login Button */}
                         <div className='space-y-4'>
-                            <Button text="লগইন করুন"></Button>
+                            <Link to="/patientDashboard">
+                                <Button text="লগইন করুন"></Button>
+                            </Link>
                             <OutlinedButton text="গুগল দিয়ে লগইন করুন" extraClass="w-full" ></OutlinedButton>
                         </div>
 

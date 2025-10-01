@@ -67,7 +67,7 @@ const PatientRegister = () => {
                         <p className="text-sm text-center mt-4">
                             অ্যাকাউন্ট আছে?{" "}
                             <Link to='/patientLogin'>
-                                <span href="#" className="text-[#1998df] hover:underline">
+                                <span  className="text-[#1998df] hover:underline">
                                     লগইন করুন
                                 </span>
                             </Link>
