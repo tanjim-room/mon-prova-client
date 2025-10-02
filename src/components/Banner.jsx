@@ -15,10 +15,10 @@ const Banner = () => {
 
             <div
                 className="hero min-h-[800px] rounded-lg"
-                style={{
-                    backgroundImage:
-                        `url(${BannerImg})`,   /* Background Image in Banner */
-                }}
+                // style={{
+                //     backgroundImage:
+                //         `url(${BannerImg})`,   /* Background Image in Banner */
+                // }}
             >
 
                 {/* Floating Content in Banner Image */}

@@ -6,6 +6,7 @@ import Doctor from '../../public/Online Doctor.json';
 import Lottie from 'lottie-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { FcGoogle } from "react-icons/fc";
 
 const DoctorRegister = () => {
     const [email, setEmail] = useState("");
@@ -62,7 +63,7 @@ const DoctorRegister = () => {
                         {/* Login Button */}
                         <div className='space-y-4'>
                             <Button text="সাইন আপ করুন"></Button>
-                            <OutlinedButton text="গুগল দিয়ে সাইন আপ করুন" extraClass="w-full" ></OutlinedButton>
+                            <OutlinedButton text="গুগল দিয়ে সাইন আপ করুন" extraClass="w-full" icon={<FcGoogle></FcGoogle>} ></OutlinedButton>
                         </div>
 
                         <p className="text-sm text-center mt-4">

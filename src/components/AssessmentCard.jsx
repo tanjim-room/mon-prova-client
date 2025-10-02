@@ -1,20 +1,20 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-const FeatureCard = ({ card }) => {
 
-    const { title, description, icon, link, color } = card;
 
+const AssessmentCard = ({assessment}) => {
+    const {title, shortTitle, icon} = assessment;
     return (
-        <Link
-            to={link}
+         <Link
+            // to={link}
             className=""
         >
             <motion.div
-                whileHover={{ y: -5, scale: 1.025 }}
-                whileTap={{ scale: 0.975 }}
+                whileHover={{ y: -10, scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 className="card shadow-xl rounded-lg p-6 cursor-pointer relative overflow-hidden"
-                style={{ backgroundColor: color }}
+                style={{ backgroundColor: "#76a4f1" }}
             >
                 {/* Glow background animation */}
                 <motion.div
@@ -27,17 +27,17 @@ const FeatureCard = ({ card }) => {
                     <div className='flex justify-center'>
                         <motion.img
                             src={icon}
-                            alt={title}
+                            alt={shortTitle}
                             className="w-20 h-20 mb-3"
                             initial={{ rotate: -10 }}
                             animate={{ rotate: 10 }}
                             transition={{ repeat: Infinity, duration: 2, repeatType: "reverse" }}
                         />
                     </div>
-                    <h2 className="card-title justify-center text-2xl font-bold drop-shadow-lg text-center">
-                        {title}
+                    <h2 className="card-title text-2xl font-bold drop-shadow-lg">
+                        {shortTitle}
                     </h2>
-                    <p className="text-sm opacity-90">{description}</p>
+                    <p className="text-sm opacity-90">{title}</p>
                     <div className="card-actions justify-end mt-4">
 
 
@@ -49,4 +49,4 @@ const FeatureCard = ({ card }) => {
     );
 };
 
-export default FeatureCard;
+export default AssessmentCard;

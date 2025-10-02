@@ -8,11 +8,13 @@ import DoctorLogin from '../pages/DoctorLogin';
 import DoctorRegister from '../pages/DoctorRegister';
 import PatientDashboard from '../pages/PatientDashboard';
 import Assessment from '../pages/Assessment';
-import Appointment from '../pages/Appointment';
+
 import DoctorList from '../pages/DoctorList';
 import Prescription from '../pages/Prescription';
 import Resources from '../pages/Resources';
 import PatientProfile from '../pages/PatientProfile';
+import Appointment from '../pages/Appointment';
+import Games from '../pages/Games';
 
 const routes = createBrowserRouter([
     {
@@ -48,7 +50,7 @@ const routes = createBrowserRouter([
                 element: <Assessment></Assessment>
             },
             {
-                path: 'appoinment',
+                path: 'appointment',
                 element: <Appointment></Appointment>
             },
             {

@@ -8,21 +8,21 @@ const NavBar = () => {
     const [open, setOpen] = useState(false);
 
     const navLinks = [
-        { name: "অ্যাসেসমেন্ট", href: "/profile" },
+        { name: "অ্যাসেসমেন্ট", href: "/assessment" },
         { name: "অ্যাপয়েন্টমেন্ট", href: "/appointment" },
-        { name: "ডাক্তার", href: "/doctor" },
+        { name: "ডাক্তার", href: "/doctors" },
         { name: "রিসোর্স", href: "/resources" },
         { name: "প্রেসক্রিপশন", href: "/prescription" },
-        { name: "গেমস", href: "/game" },
-        { name: "প্রোফাইল", href: "/profile" },
-         { name: "লগ আউট", href: "/" }
-       
+        { name: "গেমস", href: "/games" },
+        { name: "প্রোফাইল", href: "/patientProfile" },
+        { name: "লগ আউট", href: "/" }
+
     ];
 
     return (
-        <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 w-full z-50 px-16">
-            <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-lg shadow-lg flex justify-between items-center px-6 py-3">
-                
+        <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 w-full z-50 px-0">
+            <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-lg shadow-lg flex justify-between items-center px-16 py-3">
+
                 {/* MonProva Logo */}
                 <motion.a
                     href="/"
@@ -30,8 +30,10 @@ const NavBar = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
-                   <Logo></Logo>
-                   
+                    <Link to='/patientDashboard'>
+                        <Logo></Logo>
+                    </Link>
+
                 </motion.a>
 
                 {/* Desktop Menu */}
@@ -44,7 +46,7 @@ const NavBar = () => {
                         >
                             <Link to={link.href}>{link.name}</Link>
 
-                            {/* underline animation */}
+                            {/* Underline Animation */}
                             <motion.span
                                 className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#76a4f1] group-hover:w-full"
                                 transition={{ duration: 0.3 }}
@@ -53,7 +55,7 @@ const NavBar = () => {
                     ))}
                 </ul>
 
-                {/* Mobile Toggle */}
+                {/* Mobile Toggle Menu */}
                 <div className="md:hidden">
                     {open ? (
                         <X className="w-7 h-7 text-white cursor-pointer" onClick={() => setOpen(false)} />
