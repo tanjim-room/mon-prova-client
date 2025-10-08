@@ -1,7 +1,7 @@
-import Logo from '../components/Logo';
-import Button from '../components/Button';
-import OutlinedButton from '../components/OutlinedButton';
-import Doctor from '../../public/Online Doctor.json';
+import Logo from '../../components/Logo';
+import Button from '../../components/buttons/Button';
+import OutlinedButton from '../../components/buttons/OutlinedButton';
+import Doctor from '../../../public/Online Doctor.json';
 import Lottie from 'lottie-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -55,7 +55,7 @@ const DoctorLogin = () => {
                            {/* Login Button */}
                            <div className='space-y-4'>
                                <Button text="লগইন করুন"></Button>
-                               <OutlinedButton text="গুগল দিয়ে লগইন করুন" extraClass="w-full" icon={<FcGoogle></FcGoogle>} ></OutlinedButton>
+                               <OutlinedButton text="গুগল দিয়ে লগইন করুন" extraClass="w-full" icon={<FcGoogle className='size-6'></FcGoogle>} ></OutlinedButton>
                            </div>
    
                            <p className="text-sm text-center mt-4">

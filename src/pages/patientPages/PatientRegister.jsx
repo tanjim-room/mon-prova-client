@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import Logo from '../components/Logo';
-import Button from '../components/Button';
-import OutlinedButton from '../components/OutlinedButton';
-import Yoga from '../../public/yoga black.json';
+import Logo from '../../components/Logo';
+import Button from '../../components/buttons/Button';
+import OutlinedButton from '../../components/buttons/OutlinedButton';
+import Yoga from '../../../public/yoga black.json';
 import Lottie from 'lottie-react';
 import { Link } from 'react-router-dom';
+import { FcGoogle } from "react-icons/fc";
 const PatientRegister = () => {
 
     const [email, setEmail] = useState("");
@@ -61,7 +62,7 @@ const PatientRegister = () => {
                         {/* Login Button */}
                         <div className='space-y-4'>
                             <Button text="সাইন আপ করুন"></Button>
-                            <OutlinedButton text="গুগল দিয়ে সাইন আপ করুন" extraClass="w-full" ></OutlinedButton>
+                            <OutlinedButton text="গুগল দিয়ে সাইন আপ করুন" extraClass="w-full" icon={<FcGoogle className='size-6'></FcGoogle>}></OutlinedButton>
                         </div>
 
                         <p className="text-sm text-center mt-4">

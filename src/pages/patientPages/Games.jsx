@@ -1,8 +1,9 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
-const Appointment = () => {
+import NavBar from '../../components/NavBar';
+
+const Games = () => {
     return (
-       <div>
+      <div>
             <NavBar></NavBar>
             
             <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
@@ -15,4 +16,4 @@ const Appointment = () => {
     );
 };
 
-export default Appointment;
+export default Games;

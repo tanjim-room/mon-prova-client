@@ -1,9 +1,9 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import NavBar from '../../components/NavBar';
 
-const Prescription = () => {
+const PatientProfile = () => {
     return (
-       <div>
+        <div>
             <NavBar></NavBar>
             
             <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
@@ -16,4 +16,4 @@ const Prescription = () => {
     );
 };
 
-export default Prescription;
+export default PatientProfile;

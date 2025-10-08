@@ -7,7 +7,7 @@ const AssessmentCard = ({assessment}) => {
     const {title, shortTitle, icon} = assessment;
     return (
          <Link
-            // to={link}
+            to="/test"
             className=""
         >
             <motion.div

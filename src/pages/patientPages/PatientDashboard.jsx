@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import FeatureCard from '../components/FeatureCard';
+import FeatureCard from '../../components/cards/FeatureCard';
 import { div } from 'framer-motion/client';
-import Hero from '../../public/Stressed Woman at work.json';
-import NavBar from '../components/NavBar';
+import Hero from '../../../public/Stressed Woman at work.json';
+import NavBar from '../../components/NavBar';
 import Lottie from 'lottie-react';
 
 const PatientDashboard = () => {

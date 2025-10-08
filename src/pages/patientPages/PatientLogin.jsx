@@ -1,14 +1,14 @@
-
-import Logo from '../components/Logo';
-import Button from '../components/Button';
-import OutlinedButton from '../components/OutlinedButton';
-import Doctor from '../../public/Online Doctor.json';
+import React, { useState } from 'react';
+import Logo from '../../components/Logo';
+import Button from '../../components/buttons/Button';
+import OutlinedButton from '../../components/buttons/OutlinedButton';
+import Yoga from '../../../public/yoga black.json';
 import Lottie from 'lottie-react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import { FcGoogle } from "react-icons/fc";
 
-const DoctorRegister = () => {
+const PatientLogin = () => {
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     return (
@@ -23,23 +23,16 @@ const DoctorRegister = () => {
                         <Logo></Logo>
                     </div>
 
+                    {/* Welcome Text */}
                     <h1 className="text-2xl font-semibold py-4">
-                        সাইন আপ করুন
+                        লগইন করুন
                     </h1>
 
-                    {/*Sign Up Form */}
+                    {/* Form */}
                     <div className="mt-8 space-y-4">
                         <input
-                            type="textl"
-                            placeholder="আপনার নাম দিন"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            className="rounded-lg py-2 px-4 w-full border-2"
-                        />
-
-                        <input
                             type="email"
-                            placeholder="আপনার ইমেইল দিন"
+                            placeholder="ইমেইল দিন"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             className="rounded-lg py-2 px-4 w-full border-2"
@@ -47,40 +40,42 @@ const DoctorRegister = () => {
 
                         <input
                             type="password"
-                            placeholder="আপনার পাসওয়ার্ড দিন"
+                            placeholder="পাসওয়ার্ড দিন"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             className="rounded-lg py-2 px-4 w-full border-2"
                         />
 
-                        {/* <div className="flex items-center justify-between text-sm">
+                        <div className="flex items-center justify-between text-sm">
 
                             <a href="#" className="text-[#1998df] hover:underline">
                                 পাসওয়ার্ড ভুলে গেছেন?
                             </a>
-                        </div> */}
+                        </div>
 
                         {/* Login Button */}
                         <div className='space-y-4'>
-                            <Button text="সাইন আপ করুন"></Button>
-                            <OutlinedButton text="গুগল দিয়ে সাইন আপ করুন" extraClass="w-full" icon={<FcGoogle></FcGoogle>} ></OutlinedButton>
+                            <Link to="/patientDashboard">
+                                <Button text="লগইন করুন"></Button>
+                            </Link>
+                            <OutlinedButton text="গুগল দিয়ে লগইন করুন" extraClass="w-full" icon={<FcGoogle className='size-6'></FcGoogle>}></OutlinedButton>
                         </div>
 
                         <p className="text-sm text-center mt-4">
-                            অ্যাকাউন্ট আছে?{" "}
-                            <Link to='/doctorLogin'>
-                                <span  className="text-[#1998df] hover:underline">
-                                    লগইন করুন
+                            অ্যাকাউন্ট নেই?{" "}
+                            <Link to='/patientRegister'>
+                                <span className="text-[#1998df] hover:underline">
+                                    নতুন অ্যাকাউন্ট খুলুন
                                 </span>
                             </Link>
                         </p>
                     </div>
                 </div>
 
-                {/* Right Side Animation  */}
+                {/* Right Side - Illustration */}
                 <div className="hidden md:flex items-center justify-center bg-gradient-to-tr from-[#c3e1f1] to-[#76a4f1] p-6">
                     <Lottie
-                        animationData={Doctor}
+                        animationData={Yoga}
                     ></Lottie>
                 </div>
             </div>
@@ -88,4 +83,4 @@ const DoctorRegister = () => {
     );
 };
 
-export default DoctorRegister;
+export default PatientLogin;

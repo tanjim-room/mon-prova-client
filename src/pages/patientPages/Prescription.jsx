@@ -1,9 +1,9 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
+import NavBar from '../../components/NavBar';
 
-const Games = () => {
+const Prescription = () => {
     return (
-      <div>
+       <div>
             <NavBar></NavBar>
             
             <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
@@ -16,4 +16,4 @@ const Games = () => {
     );
 };
 
-export default Games;
+export default Prescription;

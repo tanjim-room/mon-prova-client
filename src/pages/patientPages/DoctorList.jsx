@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import NavBar from '../components/NavBar';
-import DoctorCard from '../components/DoctorCard';
+import NavBar from '../../components/NavBar';
+import DoctorCard from '../../components/cards/DoctorCard';
 const DoctorList = () => {
     const [doctors, setDoctors] = useState([])
 
@@ -9,7 +9,7 @@ const DoctorList = () => {
         .then(res => res.json())
         .then(data => setDoctors(data))
     },[]);
-
+    console.log(doctors)
     return (
        <div>
             <NavBar></NavBar>
@@ -18,7 +18,7 @@ const DoctorList = () => {
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 '>
                   {
-                    doctors.map((doctor, idx) => <DoctorCard key={idx} doctor={doctor}></DoctorCard>)
+                    doctors.map((doctor) => <DoctorCard key={doctor.doctorID} doctor={doctor}></DoctorCard>)
                   }
                 </div>
             </div>

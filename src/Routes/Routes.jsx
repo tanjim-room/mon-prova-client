@@ -2,19 +2,25 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 import Home from '../pages/Home';
-import PatientLogin from '../pages/PatientLogin';
-import PatientRegister from '../pages/PatientRegister';
-import DoctorLogin from '../pages/DoctorLogin';
-import DoctorRegister from '../pages/DoctorRegister';
-import PatientDashboard from '../pages/PatientDashboard';
-import Assessment from '../pages/Assessment';
 
-import DoctorList from '../pages/DoctorList';
-import Prescription from '../pages/Prescription';
-import Resources from '../pages/Resources';
-import PatientProfile from '../pages/PatientProfile';
-import Appointment from '../pages/Appointment';
-import Games from '../pages/Games';
+import PatientLogin from '../pages/patientPages/PatientLogin';
+import PatientRegister from '../pages/patientPages/PatientRegister';
+import PatientDashboard from '../pages/patientPages/PatientDashboard';
+import Assessment from '../pages/patientPages/Assessment';
+import DoctorList from '../pages/patientPages/DoctorList';
+import Prescription from '../pages/patientPages/Prescription';
+import Resources from '../pages/patientPages/Resources';
+import BlogPage from '../pages/patientPages/BlogPage';
+import Appointment from '../pages/patientPages/Appointment';
+import Games from '../pages/patientPages/Games';
+import PatientProfile from '../pages/patientPages/PatientProfile';
+
+import DoctorLogin from '../pages/doctorPages/DoctorLogin';
+import DoctorRegister from '../pages/doctorPages/DoctorRegister';
+import Test from '../pages/testPages/Test';
+import DoctorDetails from '../pages/patientPages/DoctorDetails';
+import AppointmentForm from '../pages/patientPages/AppointmentForm';
+import TwoLoader from '../components/TwoLoader';
 
 const routes = createBrowserRouter([
     {
@@ -72,6 +78,25 @@ const routes = createBrowserRouter([
             {
                 path: 'patientProfile',
                 element: <PatientProfile></PatientProfile>
+            },
+            {
+                path: 'test',
+                element: <Test></Test>
+            },
+            {
+                path: 'doctorDetails/:doctorID',
+                element: <DoctorDetails></DoctorDetails>,
+                loader: () => fetch("../../../../public/doctorInfo.json")
+                
+            },
+            {
+                path: 'appointmentForm/:doctorID',
+                element: <AppointmentForm></AppointmentForm>,
+                loader: TwoLoader
+            },
+            {
+                path: 'blog/:slug',
+                element: <BlogPage></BlogPage>
             }
 
 

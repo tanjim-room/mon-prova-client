@@ -1,0 +1,5772 @@
+[
+    {
+      "doctorID": "1",
+      "fullName": "Dr. Rahman Ahmed",
+      "specialization": "Psychiatrist",
+      "timeSlots": {
+        "Monday": [
+          {
+            "slotID": "S001",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S002",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S003",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S004",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S005",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S006",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S007",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S008",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S009",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S010",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S011",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S012",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S013",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S014",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S015",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S016",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Tuesday": [
+          {
+            "slotID": "S017",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S018",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S019",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S020",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S021",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S022",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S023",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S024",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S025",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S026",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S027",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S028",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S029",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S030",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S031",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S032",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Wednesday": [
+          {
+            "slotID": "S033",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S034",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S035",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S036",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S037",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S038",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S039",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S040",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S041",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S042",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S043",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S044",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S045",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S046",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S047",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S048",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Thursday": [
+          {
+            "slotID": "S049",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S050",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S051",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S052",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S053",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S054",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S055",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S056",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S057",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S058",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S059",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S060",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S061",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S062",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S063",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S064",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Friday": [
+          {
+            "slotID": "S065",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S066",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S067",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S068",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S069",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S070",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S071",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S072",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S073",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S074",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S075",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S076",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S077",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S078",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S079",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S080",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ]
+      }
+    },
+    {
+      "doctorID": "2",
+      "fullName": "Dr. Ayesha Karim",
+      "specialization": "Dermatologist",
+      "timeSlots": {
+        "Monday": [
+          {
+            "slotID": "S081",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S082",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S083",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S084",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S085",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S086",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S087",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S088",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S089",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S090",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S091",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S092",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S093",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S094",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S095",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S096",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Tuesday": [
+          {
+            "slotID": "S097",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S098",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S099",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S100",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S101",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S102",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S103",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S104",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S105",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S106",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S107",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S108",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S109",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S110",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S111",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S112",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Wednesday": [
+          {
+            "slotID": "S113",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S114",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S115",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S116",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S117",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S118",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S119",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S120",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S121",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S122",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S123",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S124",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S125",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S126",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S127",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S128",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Thursday": [
+          {
+            "slotID": "S129",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S130",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S131",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S132",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S133",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S134",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S135",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S136",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S137",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S138",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S139",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S140",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S141",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S142",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S143",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S144",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Friday": [
+          {
+            "slotID": "S145",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S146",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S147",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S148",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S149",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S150",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S151",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S152",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S153",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S154",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S155",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S156",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S157",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S158",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S159",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S160",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ]
+      }
+    },
+    {
+      "doctorID": "3",
+      "fullName": "Dr. Kamal Hossain",
+      "specialization": "Cardiologist",
+      "timeSlots": {
+        "Monday": [
+          {
+            "slotID": "S161",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S162",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S163",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S164",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S165",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S166",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S167",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S168",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S169",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S170",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S171",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S172",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S173",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S174",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S175",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S176",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Tuesday": [
+          {
+            "slotID": "S177",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S178",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S179",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S180",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S181",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S182",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S183",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S184",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S185",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S186",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S187",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S188",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S189",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S190",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S191",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S192",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Wednesday": [
+          {
+            "slotID": "S193",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S194",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S195",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S196",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S197",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S198",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S199",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S200",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S201",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S202",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S203",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S204",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S205",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S206",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S207",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S208",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Thursday": [
+          {
+            "slotID": "S209",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S210",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S211",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S212",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S213",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S214",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S215",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S216",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S217",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S218",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S219",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S220",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S221",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S222",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S223",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S224",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Friday": [
+          {
+            "slotID": "S225",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S226",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S227",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S228",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S229",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S230",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S231",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S232",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S233",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S234",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S235",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S236",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S237",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S238",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S239",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S240",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ]
+      }
+    },
+    {
+      "doctorID": "4",
+      "fullName": "Dr. Nadia Islam",
+      "specialization": "Neurologist",
+      "timeSlots": {
+        "Monday": [
+          {
+            "slotID": "S241",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S242",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S243",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S244",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S245",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S246",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S247",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S248",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S249",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S250",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S251",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S252",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S253",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S254",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S255",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S256",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Tuesday": [
+          {
+            "slotID": "S257",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S258",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S259",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S260",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S261",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S262",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S263",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S264",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S265",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S266",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S267",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S268",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S269",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S270",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S271",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S272",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Wednesday": [
+          {
+            "slotID": "S273",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S274",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S275",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S276",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S277",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S278",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S279",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S280",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S281",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S282",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S283",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S284",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S285",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S286",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S287",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S288",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Thursday": [
+          {
+            "slotID": "S289",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S290",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S291",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S292",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S293",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S294",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S295",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S296",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S297",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S298",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S299",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S300",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S301",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S302",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S303",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S304",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Friday": [
+          {
+            "slotID": "S305",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S306",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S307",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S308",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S309",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S310",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S311",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S312",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S313",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S314",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S315",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S316",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S317",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S318",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S319",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S320",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ]
+      }
+    },
+    {
+      "doctorID": "5",
+      "fullName": "Dr. Tanvir Alam",
+      "specialization": "Pediatrician",
+      "timeSlots": {
+        "Monday": [
+          {
+            "slotID": "S321",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S322",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S323",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S324",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S325",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S326",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S327",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S328",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S329",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S330",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S331",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S332",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S333",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S334",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S335",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S336",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Tuesday": [
+          {
+            "slotID": "S337",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S338",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S339",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S340",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S341",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S342",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S343",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S344",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S345",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S346",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S347",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S348",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S349",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S350",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S351",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S352",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Wednesday": [
+          {
+            "slotID": "S353",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S354",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S355",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S356",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S357",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S358",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S359",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S360",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S361",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S362",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S363",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S364",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S365",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S366",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S367",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S368",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Thursday": [
+          {
+            "slotID": "S369",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S370",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S371",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S372",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S373",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S374",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S375",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S376",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S377",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S378",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S379",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S380",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S381",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S382",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S383",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S384",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Friday": [
+          {
+            "slotID": "S385",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S386",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S387",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S388",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S389",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S390",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S391",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S392",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S393",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S394",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S395",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S396",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S397",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S398",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S399",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S400",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ]
+      }
+    },
+    {
+      "doctorID": "6",
+      "fullName": "Dr. Samira Akter",
+      "specialization": "Orthopedic",
+      "timeSlots": {
+        "Monday": [
+          {
+            "slotID": "S401",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S402",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S403",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S404",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S405",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S406",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S407",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S408",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S409",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S410",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S411",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S412",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S413",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S414",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S415",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S416",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Tuesday": [
+          {
+            "slotID": "S417",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S418",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S419",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S420",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S421",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S422",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S423",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S424",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S425",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S426",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S427",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S428",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S429",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S430",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S431",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S432",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Wednesday": [
+          {
+            "slotID": "S433",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S434",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S435",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S436",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S437",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S438",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S439",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S440",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S441",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S442",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S443",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S444",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S445",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S446",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S447",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S448",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Thursday": [
+          {
+            "slotID": "S449",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S450",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S451",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S452",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S453",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S454",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S455",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S456",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S457",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S458",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S459",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S460",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S461",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S462",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S463",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S464",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Friday": [
+          {
+            "slotID": "S465",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S466",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S467",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S468",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S469",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S470",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S471",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S472",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S473",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S474",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S475",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S476",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S477",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S478",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S479",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S480",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ]
+      }
+    },
+    {
+      "doctorID": "7",
+      "fullName": "Dr. Farid Chowdhury",
+      "specialization": "Gynecologist",
+      "timeSlots": {
+        "Monday": [
+          {
+            "slotID": "S481",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S482",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S483",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S484",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S485",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S486",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S487",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S488",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S489",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S490",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S491",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S492",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S493",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S494",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S495",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S496",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Tuesday": [
+          {
+            "slotID": "S497",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S498",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S499",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S500",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S501",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S502",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S503",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S504",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S505",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S506",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S507",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S508",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S509",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S510",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S511",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S512",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Wednesday": [
+          {
+            "slotID": "S513",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S514",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S515",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S516",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S517",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S518",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S519",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S520",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S521",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S522",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S523",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S524",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S525",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S526",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S527",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S528",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Thursday": [
+          {
+            "slotID": "S529",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S530",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S531",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S532",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S533",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S534",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S535",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S536",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S537",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S538",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S539",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S540",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S541",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S542",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S543",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S544",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Friday": [
+          {
+            "slotID": "S545",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S546",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S547",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S548",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S549",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S550",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S551",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S552",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S553",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S554",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S555",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S556",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S557",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S558",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S559",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S560",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ]
+      }
+    },
+    {
+      "doctorID": "8",
+      "fullName": "Dr. Laila Sultana",
+      "specialization": "ENT Specialist",
+      "timeSlots": {
+        "Monday": [
+          {
+            "slotID": "S561",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S562",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S563",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S564",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S565",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S566",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S567",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S568",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S569",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S570",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S571",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S572",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S573",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S574",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S575",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S576",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Tuesday": [
+          {
+            "slotID": "S577",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S578",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S579",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S580",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S581",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S582",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S583",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S584",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S585",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S586",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S587",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S588",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S589",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S590",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S591",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S592",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Wednesday": [
+          {
+            "slotID": "S593",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S594",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S595",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S596",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S597",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S598",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S599",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S600",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S601",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S602",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S603",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S604",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S605",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S606",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S607",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S608",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Thursday": [
+          {
+            "slotID": "S609",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S610",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S611",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S612",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S613",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S614",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S615",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S616",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S617",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S618",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S619",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S620",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S621",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S622",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S623",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S624",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Friday": [
+          {
+            "slotID": "S625",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S626",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S627",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S628",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S629",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S630",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S631",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S632",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S633",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S634",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S635",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S636",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S637",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S638",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S639",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S640",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ]
+      }
+    },
+    {
+      "doctorID": "9",
+      "fullName": "Dr. Imran Mahmud",
+      "specialization": "Oncologist",
+      "timeSlots": {
+        "Monday": [
+          {
+            "slotID": "S641",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S642",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S643",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S644",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S645",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S646",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S647",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S648",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S649",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S650",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S651",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S652",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S653",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S654",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S655",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S656",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Tuesday": [
+          {
+            "slotID": "S657",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S658",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S659",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S660",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S661",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S662",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S663",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S664",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S665",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S666",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S667",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S668",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S669",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S670",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S671",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S672",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Wednesday": [
+          {
+            "slotID": "S673",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S674",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S675",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S676",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S677",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S678",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S679",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S680",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S681",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S682",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S683",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S684",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S685",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S686",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S687",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S688",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Thursday": [
+          {
+            "slotID": "S689",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S690",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S691",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S692",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S693",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S694",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S695",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S696",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S697",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S698",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S699",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S700",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S701",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S702",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S703",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S704",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Friday": [
+          {
+            "slotID": "S705",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S706",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S707",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S708",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S709",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S710",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S711",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S712",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S713",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S714",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S715",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S716",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S717",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S718",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S719",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S720",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ]
+      }
+    },
+    {
+      "doctorID": "10",
+      "fullName": "Dr. Sabrina Riaz",
+      "specialization": "General Physician",
+      "timeSlots": {
+        "Monday": [
+          {
+            "slotID": "S721",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S722",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S723",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S724",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S725",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S726",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S727",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S728",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S729",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S730",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S731",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S732",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S733",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S734",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S735",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S736",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Tuesday": [
+          {
+            "slotID": "S737",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S738",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S739",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S740",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S741",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S742",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S743",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S744",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S745",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S746",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S747",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S748",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S749",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S750",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S751",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S752",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Wednesday": [
+          {
+            "slotID": "S753",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S754",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S755",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S756",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S757",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S758",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S759",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S760",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S761",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S762",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S763",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S764",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S765",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S766",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S767",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S768",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Thursday": [
+          {
+            "slotID": "S769",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S770",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S771",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S772",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S773",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S774",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S775",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S776",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S777",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S778",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S779",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S780",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S781",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S782",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S783",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S784",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ],
+        "Friday": [
+          {
+            "slotID": "S785",
+            "startTime": "09:00 AM",
+            "endTime": "09:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S786",
+            "startTime": "09:30 AM",
+            "endTime": "10:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S787",
+            "startTime": "10:00 AM",
+            "endTime": "10:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S788",
+            "startTime": "10:30 AM",
+            "endTime": "11:00 AM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S789",
+            "startTime": "11:00 AM",
+            "endTime": "11:30 AM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S790",
+            "startTime": "11:30 AM",
+            "endTime": "12:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S791",
+            "startTime": "12:00 PM",
+            "endTime": "12:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S792",
+            "startTime": "12:30 PM",
+            "endTime": "01:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S793",
+            "startTime": "01:00 PM",
+            "endTime": "01:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S794",
+            "startTime": "01:30 PM",
+            "endTime": "02:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S795",
+            "startTime": "02:00 PM",
+            "endTime": "02:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S796",
+            "startTime": "02:30 PM",
+            "endTime": "03:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S797",
+            "startTime": "03:00 PM",
+            "endTime": "03:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S798",
+            "startTime": "03:30 PM",
+            "endTime": "04:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          },
+          {
+            "slotID": "S799",
+            "startTime": "04:00 PM",
+            "endTime": "04:30 PM",
+            "mode": "online",
+            "isBooked": false
+          },
+          {
+            "slotID": "S800",
+            "startTime": "04:30 PM",
+            "endTime": "05:00 PM",
+            "mode": "offline",
+            "isBooked": false
+          }
+        ]
+      }
+    }
+  ]
