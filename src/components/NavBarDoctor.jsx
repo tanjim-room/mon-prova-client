@@ -4,18 +4,15 @@ import { useState } from "react";
 import Logo from "./Logo";
 import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBarDoctor = () => {
     const [open, setOpen] = useState(false);
 
     const navLinks = [
-        { name: "অ্যাসেসমেন্ট", href: "/assessment" },
-        { name: "অ্যাপয়েন্টমেন্ট", href: "/appointment" },
-        { name: "ডাক্তার", href: "/doctors" },
-        { name: "রিসোর্স", href: "/resources" },
-        { name: "প্রেসক্রিপশন", href: "/prescription" },
-        { name: "গেমস", href: "/games" },
-        { name: "সাহায্য", href: "/patientHelp" },
-        { name: "প্রোফাইল", href: "/patientProfile" },
+        { name: "অ্যাপয়েন্টমেন্ট", href: "/appointmentDoctor" },
+        { name: "শিডিউল", href: "/schedule" },
+        { name: "ইনকাম", href: "/income" },
+        { name: "সাহায্য", href: "/doctorHelp" },
+        { name: "প্রোফাইল", href: "/doctorProfile" },
         { name: "লগ আউট", href: "/" }
 
     ];
@@ -31,7 +28,7 @@ const NavBar = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
-                    <Link to='/patientDashboard'>
+                    <Link to='/doctorDashboard'>
                         <Logo></Logo>
                     </Link>
 
@@ -88,4 +85,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default NavBarDoctor;

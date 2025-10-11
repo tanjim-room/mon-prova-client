@@ -6,7 +6,7 @@ import Button from '../../components/buttons/Button';
 const DoctorDetails = () => {
     
     const { doctorID } = useParams()
-    const details= useLoaderData()
+    const details = useLoaderData()
     const detail = details.find(detail => detail.doctorID == doctorID)
     const { doctorId, fullName, specialization, designation, degrees, consultationFee, image, expertise, institute, regNo, yearsOfExperience, shortBio,medium } = detail;
     

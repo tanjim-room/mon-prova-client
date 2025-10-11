@@ -13,6 +13,7 @@ import Resources from '../pages/patientPages/Resources';
 import BlogPage from '../pages/patientPages/BlogPage';
 import Appointment from '../pages/patientPages/Appointment';
 import Games from '../pages/patientPages/Games';
+import PatientHelp from '../pages/patientPages/PatientHelp';
 import PatientProfile from '../pages/patientPages/PatientProfile';
 
 import DoctorLogin from '../pages/doctorPages/DoctorLogin';
@@ -21,6 +22,14 @@ import Test from '../pages/testPages/Test';
 import DoctorDetails from '../pages/patientPages/DoctorDetails';
 import AppointmentForm from '../pages/patientPages/AppointmentForm';
 import TwoLoader from '../components/TwoLoader';
+import DoctorDashboard from '../pages/doctorPages/DoctorDashboard';
+import DoctorAppointment from '../pages/doctorPages/DoctorAppointment';
+import Schedule from '../pages/doctorPages/Schedule';
+import Income from '../pages/doctorPages/Income';
+import DoctorHelp from '../pages/doctorPages/DoctorHelp';
+import DoctorProfile from '../pages/doctorPages/DoctorProfile';
+import AppointmentDetailsPatient from '../pages/patientPages/AppointmentDetailsPatient';
+
 
 const routes = createBrowserRouter([
     {
@@ -60,6 +69,10 @@ const routes = createBrowserRouter([
                 element: <Appointment></Appointment>
             },
             {
+                path: 'appointmentDetailsPatient/:aID',
+                element: <AppointmentDetailsPatient></AppointmentDetailsPatient>
+            },
+            {
                 path: 'doctors',
                 element: <DoctorList></DoctorList>
             },
@@ -76,6 +89,10 @@ const routes = createBrowserRouter([
                 element: <Games></Games>
             },
             {
+                path: 'patientHelp',
+                element: <PatientHelp></PatientHelp>
+            },
+            {
                 path: 'patientProfile',
                 element: <PatientProfile></PatientProfile>
             },
@@ -86,7 +103,7 @@ const routes = createBrowserRouter([
             {
                 path: 'doctorDetails/:doctorID',
                 element: <DoctorDetails></DoctorDetails>,
-                loader: () => fetch("../../../../public/doctorInfo.json")
+                loader: () => fetch("doctorInfo.json")
                 
             },
             {
@@ -97,6 +114,30 @@ const routes = createBrowserRouter([
             {
                 path: 'blog/:slug',
                 element: <BlogPage></BlogPage>
+            },
+            {
+                path: 'doctorDashboard',
+                element: <DoctorDashboard></DoctorDashboard>
+            },
+            {
+                path: 'appointmentDoctor',
+                element: <DoctorAppointment></DoctorAppointment>
+            },
+            {
+                path: 'schedule',
+                element:<Schedule></Schedule>
+            },
+            {
+                path: 'income',
+                element: <Income></Income>
+            },
+            {
+                path: 'doctorHelp',
+                element: <DoctorHelp></DoctorHelp>
+            },
+            {
+                path: 'doctorProfile',
+                element: <DoctorProfile></DoctorProfile>
             }
 
 

@@ -54,7 +54,9 @@ const DoctorLogin = () => {
    
                            {/* Login Button */}
                            <div className='space-y-4'>
-                               <Button text="লগইন করুন"></Button>
+                              <Link to='/doctorDashboard'>
+                                 <Button text="লগইন করুন"></Button>
+                              </Link>
                                <OutlinedButton text="গুগল দিয়ে লগইন করুন" extraClass="w-full" icon={<FcGoogle className='size-6'></FcGoogle>} ></OutlinedButton>
                            </div>
    

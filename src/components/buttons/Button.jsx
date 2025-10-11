@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 const Button = ({ text }) => {
   return (
+    
     <motion.button
       whileHover={{ scale: 1.025, y: -2 }}
       whileTap={{ scale: 0.975 }}
@@ -12,6 +13,7 @@ const Button = ({ text }) => {
       {/* Glow effect */}
       <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-400 to-indigo-400 opacity-0 blur-lg transition duration-100 group-hover:opacity-50"></span>
     </motion.button>
+   
   );
 }
 

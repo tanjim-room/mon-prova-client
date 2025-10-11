@@ -7,6 +7,7 @@ import dayjs from "dayjs";
 import Button from '../../components/buttons/Button';
 import { useLoaderData, useParams } from 'react-router-dom';
 import Swal from "sweetalert2";
+import { ins } from 'framer-motion/client';
 
 
 
@@ -17,11 +18,12 @@ const AppointmentForm = () => {
     const { doctorID } = useParams();
     const doctor = slots.find(d => d.doctorID === doctorID);
 
-
+    const existing = JSON.parse(localStorage.getItem("appointments") || "[]");
+    const nextAppointmentID = existing.length + 1;
 
     const doctorDetails = doctors.find(docdt => docdt.doctorID == doctorID)
 
-    const { consultationFee, fullName, specialization} = doctorDetails
+    const { doctorId, fullName, specialization, designation, degrees, consultationFee, image, expertise, institute, regNo, yearsOfExperience, shortBio,medium  } = doctorDetails
 
     const [selectedMode, setSelectedMode] = useState("online");
     const [selectedDate, setSelectedDate] = useState(new Date());
@@ -52,7 +54,9 @@ const AppointmentForm = () => {
         }
 
         const appointmentData = {
+            
             ...data,
+            appointmentID: nextAppointmentID,
             doctorID: doctorDetails.doctorID,
             doctorName: fullName,
             mode: selectedMode,
@@ -61,7 +65,15 @@ const AppointmentForm = () => {
             status: "upcoming",
             speciality: specialization,
             consultationFee,
-            img: doctorDetails.image
+            img: doctorDetails.image,
+            designation: designation,
+            degrees: degrees,
+            expertise: expertise,
+            instituteDoc: institute,
+            regNo: regNo,
+            yearsOfExperience: yearsOfExperience,
+            shortBio: shortBio,
+            medium: medium
         };
 
         // Payment popup
@@ -76,6 +88,7 @@ const AppointmentForm = () => {
             if (result.isConfirmed) {
                 // Save appointment (local)
                 const existing = JSON.parse(localStorage.getItem("appointments") || "[]");
+                
                 existing.push(appointmentData);
                 localStorage.setItem("appointments", JSON.stringify(existing));
 

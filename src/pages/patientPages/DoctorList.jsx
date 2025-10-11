@@ -9,7 +9,7 @@ const DoctorList = () => {
         .then(res => res.json())
         .then(data => setDoctors(data))
     },[]);
-    console.log(doctors)
+    
     return (
        <div>
             <NavBar></NavBar>

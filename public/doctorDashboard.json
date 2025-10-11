@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "অ্যাপয়েন্টমেন্ট",
+    "icon": "https://i.ibb.co.com/21N7RwmH/appointment.png",
+    "description": "আপনার অ্যাপয়েন্টমেন্টগুলো দেখুন ও ম্যানেজ করুন",
+    "link": "/appointmentDoctor",
+    "color": "#76a4f1"
+  },
+  {
+    "id": 2,
+    "title": "শিডিউল",
+    "icon": "https://i.ibb.co.com/ccN60d7F/morning-routine.png",
+    "description": "আপনার দৈনিক শিডিউল ও সময়সূচী ম্যানেজ করুন",
+    "link": "/schedule",
+    "color": "#1998df"
+  },
+  {
+    "id": 3,
+    "title": "ইনকাম",
+    "icon": "https://i.ibb.co.com/nqxqpkPt/cash.png",
+    "description": "আপনার আয় ও পেমেন্ট হিসাব দেখুন",
+    "link": "/income",
+    "color": "#76a4f1"
+  },
+  {
+    "id": 4,
+    "title": "সাহায্য",
+    "icon": "https://i.ibb.co.com/Xfcn9h0V/help.png",
+    "description": "রোগীদের সাহায্য করুন",
+    "link": "/doctorHelp",
+    "color": "#1998df"
+  },
+  {
+    "id": 5,
+    "title": "প্রোফাইল",
+    "icon": "https://i.ibb.co.com/qMDvPx2X/user.png",
+    "description": "আপনার প্রোফাইল দেখুন ও ম্যানেজ করুন",
+    "link": "/doctorProfile",
+    "color": "#76a4f1"
+  }
+]

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const OutlinedButton = ({ text, extraClass, icon }) => {
+const OutlinedButton = ({ text, extraClass, icon }) =>{
   return (
     <motion.button
       whileHover={{ scale: 1.025, y: -2 }}
