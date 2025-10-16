@@ -36,6 +36,7 @@ import AdminDoctorVerification from '../pages/adminPages/AdminDoctorVerification
 import AdminResources from '../pages/adminPages/AdminResources';
 import About from '../pages/About';
 import ContactUs from '../pages/ContactUs';
+import DashboardLayout from '../layouts/DashboardLayout';
 
 
 const routes = createBrowserRouter([
@@ -64,8 +65,19 @@ const routes = createBrowserRouter([
                 element: <DoctorRegister></DoctorRegister>
             },
             {
-                path: 'patientDashboard',
-                element: <PatientDashboard></PatientDashboard>
+                path: '/patientDashboard',
+                element: <DashboardLayout></DashboardLayout>,
+                children: [
+                    {
+                        path: 'assessment',
+                        element: <Assessment></Assessment>,
+                    },
+                    {
+                        path: 'appointment',
+                        element: <Appointment></Appointment>,
+                    },
+                   
+                ]
             },
             {
                 path: 'assessment',

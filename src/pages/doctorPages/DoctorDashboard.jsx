@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import FeatureCard from '../../components/cards/FeatureCard';
+import FeatureCard from '../../components/cards/FeatureCards';
 import { div } from 'framer-motion/client';
 
 import Lottie from 'lottie-react';

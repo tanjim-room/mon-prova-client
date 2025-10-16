@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from '../../components/NavBar';
-import FeatureCard from '../../components/cards/FeatureCard';
+import FeatureCard from '../../components/cards/FeatureCards';
 import AssessmentCard from '../../components/cards/AssessmentCard';
 
 const Assessment = () => {

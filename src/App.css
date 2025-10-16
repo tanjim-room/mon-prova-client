@@ -69,12 +69,12 @@ body {
 /* Marquee (hero bottom bar) */
 .hero-marquee-wrapper {
   position: absolute;
-  /* left: 3rem;
+  left: 3rem;
   right: 3rem;
-  bottom: 3.5rem; place above footer/edge as in screenshot */
-  height: 3.2rem;
+  bottom: 3.5rem; /*place above footer/edge as in screenshot*/
+  height: 3.2rem; 
   overflow: hidden;
-   /* red border */
+
 
  
   display: flex;
@@ -108,4 +108,55 @@ body {
     animation: none;
     transform: translateX(0);
   }
+}
+
+/* Page hero + cards (About / Contact) */
+.page-hero {
+  background: linear-gradient(180deg, #eef8ff 0%, #dff5ff 100%);
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.page-hero .hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.page-hero h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  color: #164eab; /* deep blue */
+}
+.page-hero p.lead {
+  color: #3b6b86;
+  margin-bottom: 1.25rem;
+}
+
+.card-panel {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.75rem;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+
+.two-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.btn-gradient {
+  display: inline-block;
+  background: linear-gradient(90deg,#2b6de8 0%, #19a96b 100%);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(27,78,203,0.18);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .two-cards { grid-template-columns: 1fr; }
+  .hero-marquee-wrapper { left: 1rem; right: 1rem; }
 }

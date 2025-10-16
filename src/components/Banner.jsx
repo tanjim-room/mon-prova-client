@@ -74,7 +74,7 @@ const Banner = () => {
                     {/* Marquee bar (red-marked area) */}
                     <div className="hero-marquee-wrapper">
                         <div className="hero-marquee-track" role="marquee" aria-live="polite">
-                            <span className="hero-marquee-text">MonProva: Empowering Your Journey to Mental Wellness, Where Professional Care Meets Self-Discovery</span>
+                            <span className="hero-marquee-text"> MonProva: Empowering Your Journey to Mental Wellness, Where Professional Care Meets Self-Discovery</span>
                             <span className="hero-marquee-text">MonProva: Empowering Your Journey to Mental Wellness, Where Professional Care Meets Self-Discovery</span>
                         </div>
                     </div>
