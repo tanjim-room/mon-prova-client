@@ -29,6 +29,11 @@ import Income from '../pages/doctorPages/Income';
 import DoctorHelp from '../pages/doctorPages/DoctorHelp';
 import DoctorProfile from '../pages/doctorPages/DoctorProfile';
 import AppointmentDetailsPatient from '../pages/patientPages/AppointmentDetailsPatient';
+import AppointmentDetailsDoctor from '../pages/doctorPages/AppointmentDetailsDoctor';
+import AdminDashboard from '../pages/adminPages/AdminDashboard';
+import AdminDoctors from '../pages/adminPages/AdminDoctors';
+import AdminDoctorVerification from '../pages/adminPages/AdminDoctorVerification';
+import AdminResources from '../pages/adminPages/AdminResources';
 
 
 const routes = createBrowserRouter([
@@ -97,7 +102,7 @@ const routes = createBrowserRouter([
                 element: <PatientProfile></PatientProfile>
             },
             {
-                path: 'test',
+                path: 'tester',
                 element: <Test></Test>
             },
             {
@@ -138,6 +143,27 @@ const routes = createBrowserRouter([
             {
                 path: 'doctorProfile',
                 element: <DoctorProfile></DoctorProfile>
+            },
+            // Admin routes
+            {
+                path: 'admin',
+                element: <AdminDashboard></AdminDashboard>
+            },
+            {
+                path: 'admin/doctors',
+                element: <AdminDoctors></AdminDoctors>
+            },
+            {
+                path: 'admin/doctor/:doctorID',
+                element: <AdminDoctorVerification></AdminDoctorVerification>
+            },
+            {
+                path: 'admin/resources',
+                element: <AdminResources></AdminResources>
+            },
+            {
+                path: 'appointmentDetailsDoctor/:aID',
+                element: <AppointmentDetailsDoctor></AppointmentDetailsDoctor>
             }
 
 

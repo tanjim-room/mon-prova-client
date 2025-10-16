@@ -7,9 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "test": "vitest",
+    "test:unit": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test:e2e": "playwright test",
     "preview": "vite preview"
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
     "dayjs": "^1.11.18",
     "framer-motion": "^12.23.22",
     "localforage": "^1.10.0",
@@ -24,13 +29,19 @@
     "react-router-dom": "^7.9.3",
     "sort-by": "^1.2.0",
     "sweetalert": "^2.1.2",
-    "sweetalert2": "^11.24.1"
+    "sweetalert2": "^11.24.1",
+    "sweetalert2-react-content": "^5.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
+    "@testing-library/jest-dom": "^6.0.1",
+    "@testing-library/react": "^15.0.0",
+    "jsdom": "^22.1.0",
+    "playwright": "^1.41.0",
+    "vitest": "^1.4.2",
     "autoprefixer": "^10.4.21",
     "daisyui": "^5.1.25",
     "eslint": "^9.36.0",

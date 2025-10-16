@@ -59,7 +59,7 @@
         "id": 8,
         "title": "প্রোফাইল",
         "icon": "https://i.ibb.co.com/qMDvPx2X/user.png",
-        "description": "আপনার ব্যক্তিগত তথ্য দেখুন ও ম্যানেজ করুন",
+        "description": "আপনার ব্যক্তিগত তথ্য ম্যানেজ করুন",
         "link": "/patientProfile",
         "color": "#1998df"
       }

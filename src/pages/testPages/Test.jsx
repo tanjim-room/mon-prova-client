@@ -9,7 +9,7 @@ const Test = () => {
     const [result, setResult] = useState(null);
     const [allAnswered, setAllAnswered] = useState(false);
 
-    // 🌀 Reset state when a new test is selected
+    // Reset state when a new test is selected
     useEffect(() => {
         if (selectedTest) {
             setAnswers({});
@@ -18,7 +18,7 @@ const Test = () => {
         }
     }, [selectedTest]);
 
-    // ✅ Check if all questions are answered
+    // Check if all questions are answered
     useEffect(() => {
         if (!selectedTest) return;
         const totalAnswered = Object.keys(answers).length;
@@ -26,7 +26,7 @@ const Test = () => {
         setAllAnswered(totalAnswered === totalQuestions);
     }, [answers, selectedTest]);
 
-    // 🧮 Calculate score and severity on submit
+    // Calculate score and severity on submit
     const handleSubmit = () => {
         if (!selectedTest) return;
         const scoring = selectedTest.scoring;
@@ -54,7 +54,7 @@ const Test = () => {
         setResult({ total, level });
     };
 
-    // 📨 (Optional) Send result after submission
+    // (Optional) Send result after submission
     useEffect(() => {
         if (result && selectedTest?.method === "POST") {
             const payload = {
@@ -63,7 +63,7 @@ const Test = () => {
                 totalScore: result.total,
                 severity: result.level,
             };
-            console.log("📤 Sending data:", payload);
+            console.log("Sending data:", payload);
             // fetch("/api/save-test", { ... })
         }
     }, [result]);
@@ -71,11 +71,11 @@ const Test = () => {
     return (
         <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 p-6">
             <h1 className="text-3xl font-bold text-center text-blue-700 mb-8">
-                🧠 মনপ্রভা মানসিক স্বাস্থ্য মূল্যায়ন
+                মনপ্রভা মানসিক স্বাস্থ্য মূল্যায়ন
             </h1>
 
             {/* ====== Test Card View ====== */}
-            {!selectedTest && (
+            {/* {!selectedTest && (
                 <div className="grid md:grid-cols-3 gap-6">
                     {testsData.map((test) => (
                         <div
@@ -95,9 +95,9 @@ const Test = () => {
                         </div>
                     ))}
                 </div>
-            )}
+            )} */}
 
-            {/* ====== Question View ====== */}
+            {/* Question View */}
             {selectedTest && (
                 <div className="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow">
                     <button
@@ -136,7 +136,7 @@ const Test = () => {
                         </div>
                     ))}
 
-                    {/* ✅ Show Submit Button only after all answered */}
+                    {/*Show Submit Button only after all answered */}
                     {allAnswered && !result && (
                         <div className="mt-8 text-center">
                             <button
@@ -148,7 +148,7 @@ const Test = () => {
                         </div>
                     )}
 
-                    {/* 🧾 Result Display */}
+                    {/*Result Display */}
                     {result && (
                         <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-xl text-center">
                             <p className="text-lg font-semibold text-blue-700">

@@ -13,7 +13,7 @@ const AppointmentForm = () => {
   const [availableSlots, setAvailableSlots] = useState([]);
   const [selectedDoctor, setSelectedDoctor] = useState(null);
 
-  // ✅ Manual English→Bangla weekday map (exact match with JSON)
+  // Manual English→Bangla weekday map (exact match with JSON)
   const dayMap = {
     Sunday: "রবিবার",
     Monday: "সোমবার",
@@ -27,7 +27,7 @@ const AppointmentForm = () => {
   // 🩵 Handle form submit
   const onSubmit = (data) => {
     alert(
-      `✅ অ্যাপয়েন্টমেন্ট বুক হয়েছে!\nডাক্তার: ${selectedDoctor?.fullName}\nতারিখ: ${dayjs(selectedDate).format(
+      `অ্যাপয়েন্টমেন্ট বুক হয়েছে!\nডাক্তার: ${selectedDoctor?.fullName}\nতারিখ: ${dayjs(selectedDate).format(
         "DD/MM/YYYY"
       )}\nসেশন: ${data.slot}\nমোড: ${selectedType}`
     );
@@ -38,7 +38,7 @@ const AppointmentForm = () => {
     setSelectedDoctor(null);
   };
 
-  // 🗓 Handle date selection
+  // Handle date selection
   const handleDateChange = (date) => {
     setSelectedDate(date);
 
@@ -48,7 +48,7 @@ const AppointmentForm = () => {
     }
 
     const englishDay = dayjs(date).format("dddd");
-    const banglaDay = dayMap[englishDay]; // ✅ Convert to Bangla name like in your JSON
+    const banglaDay = dayMap[englishDay]; // Convert to Bangla name like in your JSON
 
     // Filter doctors by selectedType and matching day
     const filteredDoctors = doctors
@@ -104,14 +104,14 @@ const AppointmentForm = () => {
               onClick={() => setSelectedType("অফলাইন")}
               className={`btn ${selectedType === "অফলাইন" ? "btn-primary" : "btn-outline"}`}
             >
-              🏥 অফলাইন
+              অফলাইন
             </button>
             <button
               type="button"
               onClick={() => setSelectedType("অনলাইন")}
               className={`btn ${selectedType === "অনলাইন" ? "btn-primary" : "btn-outline"}`}
             >
-              💻 অনলাইন
+              অনলাইন
             </button>
           </div>
         </div>
@@ -162,7 +162,7 @@ const AppointmentForm = () => {
           </div>
         ) : (
           selectedDate &&
-          <p className="text-center text-gray-500 mt-4">❌ এই তারিখে কোনো ডাক্তার উপলব্ধ নেই</p>
+          <p className="text-center text-gray-500 mt-4">এই তারিখে কোনো ডাক্তার উপলব্ধ নেই</p>
         )}
 
         {/* Submit */}

@@ -1,8 +1,21 @@
 #root {
-  max-width: 1440px;
+  max-width: 1520 px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+}
+
+/* Home specific: make home full-bleed (overrides #root padding) */
+.home-full-bleed {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100vw !important;
+}
+
+/* remove default body margin to avoid white gutters */
+body {
+  margin: 0;
 }
 
 .logo {
@@ -39,4 +52,16 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Banner helpers */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+}
+
+.support-card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(6px);
 }

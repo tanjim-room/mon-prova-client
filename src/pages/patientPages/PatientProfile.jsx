@@ -57,7 +57,7 @@ const PatientProfile = () => {
 
             <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
                 <div>
-                    <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-xl">
+                    <div className="mx-auto my-10 p-5 bg-white shadow-lg rounded-xl">
                         <h1 className="text-3xl font-semibold text-center mb-8">রোগীর প্রোফাইল</h1>
                         <div className="flex justify-center mb-6">
                             <div className="avatar">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../../components/NavBar";
 import  BlogCard from "../../components/cards/BlogCard"
 import  VideoCard from "../../components/cards/VideoCard"
-// মানসিক স্বাস্থ্য রিসোর্স
+// Resources Data
 const resources = {
   videos: [
     {
@@ -113,7 +113,7 @@ const Resources = () => {
       <NavBar />
 
       <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
-        {/* ট্যাব */}
+        {/* Tab */}
         <div className="flex gap-4 mb-8">
           <button
             className={`px-4 py-2 rounded-lg font-semibold ${
@@ -137,7 +137,7 @@ const Resources = () => {
           </button>
         </div>
 
-        {/* রিসোর্স লিস্ট */}
+        {/* Resource List */}
         <div className="space-y-4">{renderResources()}</div>
       </div>
     </div>

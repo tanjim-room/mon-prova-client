@@ -27,7 +27,7 @@ const DoctorLogin = () => {
                            লগইন করুন
                        </h1>
    
-                       {/* Form */}
+                       {/* Login Form */}
                        <div className="mt-8 space-y-4">
                            <input
                                type="email"
