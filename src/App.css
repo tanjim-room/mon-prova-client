@@ -65,3 +65,47 @@ body {
   background: rgba(255,255,255,0.8);
   backdrop-filter: blur(6px);
 }
+
+/* Marquee (hero bottom bar) */
+.hero-marquee-wrapper {
+  position: absolute;
+  /* left: 3rem;
+  right: 3rem;
+  bottom: 3.5rem; place above footer/edge as in screenshot */
+  height: 3.2rem;
+  overflow: hidden;
+   /* red border */
+
+ 
+  display: flex;
+  align-items: center;
+}
+
+.hero-marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  padding-left: 100%; /* start off-screen */
+  animation: marquee 20s linear infinite;
+}
+
+.hero-marquee-text {
+  display: inline-block;
+  color: #ffffff; /* red-500 */
+  font-weight: 60;
+  font-size: 2rem;
+  /* padding: 0 1rem; */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Respect user's reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .hero-marquee-track {
+    animation: none;
+    transform: translateX(0);
+  }
+}

@@ -34,6 +34,8 @@ import AdminDashboard from '../pages/adminPages/AdminDashboard';
 import AdminDoctors from '../pages/adminPages/AdminDoctors';
 import AdminDoctorVerification from '../pages/adminPages/AdminDoctorVerification';
 import AdminResources from '../pages/adminPages/AdminResources';
+import About from '../pages/About';
+import ContactUs from '../pages/ContactUs';
 
 
 const routes = createBrowserRouter([
@@ -143,6 +145,14 @@ const routes = createBrowserRouter([
             {
                 path: 'doctorProfile',
                 element: <DoctorProfile></DoctorProfile>
+            },
+            {
+                path: 'about',
+                element: <About></About>
+            },
+            {
+                path: 'contact',
+                element: <ContactUs></ContactUs>
             },
             // Admin routes
             {
