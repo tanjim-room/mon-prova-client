@@ -22,31 +22,30 @@ const Appointment = () => {
   };
 
   return (
-    <div>
-      <NavBar />
-
-      <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
+    <div className="min-h-screen bg-[#EFF7FE] p-4 rounded-md">
+      
+      <div className="bg-white rounded-md m-0 p-4">
         {/* Tabs */}
-        <div className="flex gap-4 mb-8">
+        <div className="flex gap-8 mb-2 p-8">
           <button
-            className={`px-4 py-2 rounded-lg font-semibold ${
+            className={`m-0 px-4 py-2 rounded-md font-semibold ${
               activeTab === "upcoming"
-                ? "bg-[#1998df] text-white"
-                : "bg-white text-[#1998df] border border-[#1998df]"
+                ? "bg-[#007AF5] text-white"
+                : "bg-white text-[#007AF5] border border-[#007AF5]"
             }`}
             onClick={() => setActiveTab("upcoming")}
           >
-           আসছে
+           আপকামিং অ্যাপয়েন্টমেন্ট
           </button>
           <button
-            className={`px-4 py-2 rounded-lg font-semibold ${
+            className={`px-4 py-2 rounded-md font-semibold ${
               activeTab === "completed"
-                ? "bg-[#76a4f1] text-white"
-                : "bg-white text-[#76a4f1] border border-[#76a4f1]"
+                ? "bg-[#007AF5] text-white"
+                : "bg-white text-[#007AF5] border border-[#007AF5]"
             }`}
             onClick={() => setActiveTab("completed")}
           >
-            সম্পন্ন
+            সম্পন্ন অ্যাপয়েন্টমেন্ট
           </button>
         </div>
 

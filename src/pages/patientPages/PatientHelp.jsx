@@ -28,13 +28,13 @@ const PatientHelp = () => {
   };
 
   return (
-    <div >
-      <NavBar></NavBar>
-      <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
+    <div className="bg-[#EFF7FE] p-4">
+   
+      <div className="min-h-[850px] p-8 bg-white rounded-md">
         <div>
-          <h1 className="text-3xl font-bold mb-6 text-center">
-          সহায়তা নিন
-        </h1>
+            <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
+            সহায়তা নিন
+          </h2>
 
         {/* Post Question Section */}
         <div className="form-control mb-8 space-y-4">
@@ -64,24 +64,25 @@ const PatientHelp = () => {
                 className="card border border-gray-200 shadow-md bg-base-100"
               >
                 <div className="card-body">
-                  <h2 className="font-semibold text-lg">আপনার প্রশ্ন:</h2>
-                  <p className="text-gray-800">{q.question}</p>
-                  <p className="text-xs text-gray-400 mt-1">
+                  <p className="text-xs text-gray-400 mt-1 text-left">
                     পোস্ট করা হয়েছে: {q.timestamp}
                   </p>
+                  <h2 className="font-semibold text-lg text-left">আপনার প্রশ্ন:</h2>
+                  <p className="text-gray-800 text-left">{q.question}</p>
+                  
 
                   <div className="divider"></div>
 
                   {q.reply ? (
-                    <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded-md">
-                      <h3 className="font-semibold text-green-700">
-                        চিকিৎসকের উত্তর:
+                    <div className="bg-[#EFF7FE]   p-3 rounded-md">
+                      <h3 className="font-semibold text-gray-800 text-left">
+                        ডাক্তারের উত্তর:
                       </h3>
-                      <p>{q.reply}</p>
+                      <p className="text-left">{q.reply}</p>
                     </div>
                   ) : (
-                    <p className="text-sm text-gray-400 italic">
-                      চিকিৎসকের উত্তর অপেক্ষায়...
+                    <p className="text-sm text-gray-400 italic tetxt-left">
+                      ডাক্তারের উত্তর অপেক্ষায়...
                     </p>
                   )}
                 </div>

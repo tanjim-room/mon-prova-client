@@ -1,10 +1,10 @@
 [
     {
       "id": "phq9",
-      "title": "PHQ-9 (বিষণ্নতা মূল্যায়ন)",
+      "title": "PHQ-9 (বিষণ্ণতা মূল্যায়ন)",
       "icon" : "https://i.ibb.co.com/8D31X9wZ/depression.png",
-      "shortTitle": "PHQ-9",
-      "description": "Patient Health Questionnaire-9। গত ২ সপ্তাহে নিচের সমস্যাগুলো কতবার অনুভব করেছেন তা উল্লেখ করুন।",
+      "shortTitle": "Patient Health Questionnaire-9",
+      "description": "PHQ-9 ব্যবহৃত হয় গত দুই সপ্তাহে বিষণ্নতা বা মনমরা ভাবের লক্ষণ মূল্যায়নে। এটি ৯টি প্রশ্নের মাধ্যমে ডিপ্রেশনের তীব্রতা নির্ধারণ করে।",
       "method": "POST",
       "submitLabel": "PHQ-9 জমা দিন",
       "questions": [
@@ -41,9 +41,9 @@
     {
       "id": "gad7",
       "title": "GAD-7 (উদ্বেগ মূল্যায়ন)",
-      "shortTitle": "GAD-7",
+      "shortTitle": "Generalized Anxiety Disorder-7",
       "icon" : "https://i.ibb.co.com/spFb1GVG/anxiety.png",
-      "description": "Generalized Anxiety Disorder-7। গত ২ সপ্তাহে নিচের সমস্যাগুলো কতবার অনুভব করেছেন তা উল্লেখ করুন।",
+      "description": "GAD-7 হলো উদ্বেগ বা দুশ্চিন্তার মাত্রা পরিমাপের একটি স্ব-মূল্যায়ন স্কেল। এটি ৭টি প্রশ্নের মাধ্যমে উদ্বেগের মাত্রা হালকা, মাঝারি বা গুরুতরভাবে নির্ধারণ করে।",
       "method": "POST",
       "submitLabel": "GAD-7 জমা দিন",
       "questions": [
@@ -76,9 +76,9 @@
     {
       "id": "pss10",
       "title": "PSS-10 (মানসিক চাপ মূল্যায়ন)",
-      "shortTitle": "PSS-10",
+      "shortTitle": "Perceived Stress Scale-10",
       "icon" : "https://i.ibb.co.com/20RQp86s/stress-test.png",
-      "description": "গত ১ মাসে কতবার নিচের অনুভূতিগুলো হয়েছে বা এমনভাবে ভেবেছেন তা উল্লেখ করুন। (কিছু প্রশ্ন উল্টা স্কোর করতে হবে)।",
+      "description": "PSS-10 ব্যবহৃত হয় একজন ব্যক্তি তার দৈনন্দিন জীবনে কতটা চাপ অনুভব করেন তা জানতে। এটি ১০টি প্রশ্নের মাধ্যমে মানসিক চাপের মাত্রা মূল্যায়ন করে।",
       "method": "POST",
       "submitLabel": "PSS-10 জমা দিন",
       "questions": [

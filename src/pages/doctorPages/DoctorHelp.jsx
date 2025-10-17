@@ -41,8 +41,8 @@ const DoctorHelp = () => {
           questions.map((q) => (
             <div key={q.id} className="card bg-base-100 shadow-md border mb-6">
               <div className="card-body">
-                <h2 className="font-semibold text-lg">রোগীর প্রশ্ন:</h2>
-                <p className="text-gray-800">{q.question}</p>
+                <h2 className="font-semibold text-lg text-left">রোগীর প্রশ্ন:</h2>
+                <p className="text-gray-800 text-left">{q.question}</p>
                 <p className="text-xs text-gray-400 mt-1">
                   পোস্টেড : {q.timestamp}
                 </p>

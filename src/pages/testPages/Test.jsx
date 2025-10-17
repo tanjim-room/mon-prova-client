@@ -69,37 +69,39 @@ const Test = () => {
     }, [result]);
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 p-6">
-            <h1 className="text-3xl font-bold text-center text-blue-700 mb-8">
+        <div className="min-h-screen p-6">
+
+            <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
                 মনপ্রভা মানসিক স্বাস্থ্য মূল্যায়ন
-            </h1>
+            </h2>
 
             {/* ====== Test Card View ====== */}
-            {/* {!selectedTest && (
-                <div className="grid md:grid-cols-3 gap-6">
+            {!selectedTest && (
+                <div className="grid md:grid-cols-1 gap-6">
                     {testsData.map((test) => (
                         <div
                             key={test.id}
                             onClick={() => setSelectedTest(test)}
-                            className="cursor-pointer bg-white p-8 rounded-2xl shadow hover:shadow-lg transition flex flex-col items-center"
+                            className="cursor-pointer bg-[#EFF7FE] p-8 rounded-md shadow hover:shadow-lg transition flex flex-col items-center border space-y-2"
                         >
                             <img
                                 src={test.icon}
                                 alt={test.shortTitle}
                                 className="h-24 w-24 mb-4"
                             />
-                            <h2 className="text-xl font-bold text-blue-600 mb-2">
+                            <h2 className="text-xl font-bold text-[#007AF5] mb-2">
                                 {test.title}
                             </h2>
-                            <p className="text-gray-600 text-center">{test.description}</p>
+                            <p className="text-md font-semibold">({test.shortTitle})</p>
+                            <p className="text-gray-600 text-center w-3/4">{test.description}</p>
                         </div>
                     ))}
                 </div>
-            )} */}
+            )}
 
             {/* Question View */}
             {selectedTest && (
-                <div className="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow">
+                <div className="mx-auto bg-white p-8 rounded-md shadow">
                     <button
                         onClick={() => setSelectedTest(null)}
                         className="mb-6 text-blue-600 hover:underline"
@@ -125,8 +127,8 @@ const Test = () => {
                                             setAnswers((prev) => ({ ...prev, [q.id]: opt.value }))
                                         }
                                         className={`px-4 py-2 rounded-xl border ${answers[q.id] === opt.value
-                                                ? "bg-blue-600 text-white"
-                                                : "bg-gray-50 hover:bg-blue-50"
+                                            ? "bg-blue-600 text-white"
+                                            : "bg-gray-50 hover:bg-blue-50"
                                             }`}
                                     >
                                         {opt.label}

@@ -37,6 +37,8 @@ import AdminResources from '../pages/adminPages/AdminResources';
 import About from '../pages/About';
 import ContactUs from '../pages/ContactUs';
 import DashboardLayout from '../layouts/DashboardLayout';
+import DashboardLayoutDoctor from '../layouts/DashboardLayoutDoctor';
+import HomePatient from '../pages/HomePatient';
 
 
 const routes = createBrowserRouter([
@@ -68,6 +70,10 @@ const routes = createBrowserRouter([
                 path: '/patientDashboard',
                 element: <DashboardLayout></DashboardLayout>,
                 children: [
+                     {
+                        path: '/patientDashboard',
+                        element: <HomePatient></HomePatient>,
+                    },
                     {
                         path: 'assessment',
                         element: <Assessment></Assessment>,
@@ -76,8 +82,53 @@ const routes = createBrowserRouter([
                         path: 'appointment',
                         element: <Appointment></Appointment>,
                     },
-                   
-                ]
+                    {
+                        path: 'doctors',
+                        element: <DoctorList></DoctorList>,
+
+                    },
+                    {
+                        path: 'doctorDetails/:doctorID',
+                        element: <DoctorDetails></DoctorDetails>,
+                        loader: () => fetch("doctorInfo.json"),
+                    },
+                    {
+                        path: 'appointmentDetails/:aID',
+                        element: <AppointmentDetailsPatient></AppointmentDetailsPatient>,
+
+                    },
+                    {
+                        path: 'prescription',
+                        element: <Prescription></Prescription>,
+                    },
+                    {
+                        path: 'resources',
+                        element: <Resources></Resources>,
+                    },
+                    {
+                        path: 'games',
+                        element: <Games></Games>,
+                    },
+                    {
+                        path: 'patientHelp',
+                        element: <PatientHelp></PatientHelp>,
+                    },
+                    {
+                        path: 'blog/:slug',
+                        element: <BlogPage></BlogPage>,
+                    },
+                    {
+                        path: 'patientProfile',
+                        element: <PatientProfile></PatientProfile>,
+                    },
+                    {
+                        path: 'appointmentForm/:doctorID',
+                        element: <AppointmentForm></AppointmentForm>,
+                        loader: TwoLoader
+                    }
+
+
+                ],
             },
             {
                 path: 'assessment',
@@ -123,7 +174,7 @@ const routes = createBrowserRouter([
                 path: 'doctorDetails/:doctorID',
                 element: <DoctorDetails></DoctorDetails>,
                 loader: () => fetch("doctorInfo.json")
-                
+
             },
             {
                 path: 'appointmentForm/:doctorID',
@@ -135,8 +186,25 @@ const routes = createBrowserRouter([
                 element: <BlogPage></BlogPage>
             },
             {
-                path: 'doctorDashboard',
-                element: <DoctorDashboard></DoctorDashboard>
+                path: '/doctorDashboard',
+                element: <DashboardLayoutDoctor></DashboardLayoutDoctor>,
+                children: [
+                    {
+                        path: 'appointmentDoctor',
+                        element: <DoctorAppointment></DoctorAppointment>
+                    },
+                    {
+                        path: 'appointmentDetailsDoctor/:aID',
+                        element: <AppointmentDetailsDoctor></AppointmentDetailsDoctor>
+                    },
+                    {
+                        path: 'schedule',
+                        element: <Schedule></Schedule>
+                    },
+                    {
+                    }
+                ]
+                ,
             },
             {
                 path: 'appointmentDoctor',
@@ -144,7 +212,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: 'schedule',
-                element:<Schedule></Schedule>
+                element: <Schedule></Schedule>
             },
             {
                 path: 'income',
@@ -189,9 +257,9 @@ const routes = createBrowserRouter([
             }
 
 
-            
+
         ]
     },
 ]);
 
-export  { routes };
+export { routes };

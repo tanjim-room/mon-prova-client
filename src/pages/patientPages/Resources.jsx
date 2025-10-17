@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../../components/NavBar";
 import  BlogCard from "../../components/cards/BlogCard"
 import  VideoCard from "../../components/cards/VideoCard"
+import Logo from "../../components/Logo";
 // Resources Data
 const resources = {
   videos: [
@@ -109,27 +110,33 @@ const Resources = () => {
   };
 
   return (
-    <div>
-      <NavBar />
+    <div className="bg-[#EFF7FE] p-4">
+  
 
-      <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
+      <div className="min-h-[850px] p-8 bg-white rounded-lg">
+        {/* <div className='w-full flex justify-center items-center my-8'>
+            <Logo></Logo>
+        </div> */}
+          <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
+            রিসোর্স সমুহ
+          </h2>
         {/* Tab */}
         <div className="flex gap-4 mb-8">
           <button
             className={`px-4 py-2 rounded-lg font-semibold ${
               activeTab === "videos"
-                ? "bg-[#1998df] text-white"
-                : "bg-white text-[#1998df] border border-[#1998df]"
+                ? "bg-[#007AF5] text-white"
+                : "bg-white text-[#007AF5] border border-[#007AF5]"
             }`}
             onClick={() => setActiveTab("videos")}
           >
             ভিডিও
           </button>
           <button
-            className={`px-4 py-2 rounded-lg font-semibold ${
+            className={`px-8 py-2 rounded-lg font-semibold ${
               activeTab === "blogs"
-                ? "bg-[#76a4f1] text-white"
-                : "bg-white text-[#76a4f1] border border-[#76a4f1]"
+                ? "bg-[#007AF5] text-white"
+                : "border bg-white text-[#007AF5]  border-[#007AF5]"
             }`}
             onClick={() => setActiveTab("blogs")}
           >

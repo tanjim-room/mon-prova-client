@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import NavBar from "../../components/NavBar";
+
+import { IoArrowBackSharp } from "react-icons/io5";
 
 // Sample blog data
 const blogData = [
@@ -66,7 +67,7 @@ const blogData = [
     ৪. ইতিবাচক চিন্তাভাবনা
     ৫. বন্ধু ও পরিবারের সাথে খোলামেলা কথা বলা
     `,
-   thumbnail: "https://i.ibb.co.com/p6tXR9CB/5e666bf9a9f40c226b0a4de4.webp",
+    thumbnail: "https://i.ibb.co.com/p6tXR9CB/5e666bf9a9f40c226b0a4de4.webp",
   },
 ];
 
@@ -78,9 +79,9 @@ const BlogPage = () => {
 
   if (!blog) {
     return (
-      <div>
-        <NavBar />
-        <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
+      <div className="bg-[#EFF7FE] p-4">
+
+        <div className="min-h-[850px] p-16 bg-white rounded-md ">
           <p className="text-gray-500 text-lg">কোনো ব্লগ পাওয়া যায়নি।</p>
         </div>
       </div>
@@ -88,11 +89,24 @@ const BlogPage = () => {
   }
 
   return (
-    <div>
-      <NavBar />
-      <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16  mx-auto">
-        <div className="mb-8">
-          <img src={blog.thumbnail} alt=""  className="h-[400px] w-full object-cover"/>
+    <div className="bg-[#EFF7FE] p-4">
+
+      <div className="min-h-[850px] p-8 bg-white rounded-md mx-auto">
+       <div className="my-4">
+         <button className="border-2 rounded-md flex justify-center items-center hover:bg-[#E8594A] hover:text-white transition">
+          <Link
+            to="/patientDashboard/resources"
+            className="flex items-center gap-6 px-4 py-2 font-semibold text-xl rounded-md "
+          >
+            <div className='flex gap-4 items-center'>
+              <span className="text-xl"><IoArrowBackSharp></IoArrowBackSharp></span>
+              <span className='text-center text-lg'>ফিরে যান</span>
+            </div>
+          </Link>
+        </button>
+       </div>
+        <div className="mb-8 ">
+          <img src={blog.thumbnail} alt="" className="h-[400px] w-full object-cover rounded-md" />
         </div>
         <h1 className="text-3xl font-bold mb-6 text-[#1998df] text-left">{blog.title}</h1>
         <div className="text-gray-700 whitespace-pre-line leading-relaxed mb-6 text-left">

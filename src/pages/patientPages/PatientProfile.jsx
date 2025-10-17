@@ -52,13 +52,15 @@ const PatientProfile = () => {
     };
 
     return (
-        <div>
-            <NavBar />
+        <div className="bg-[#EFF7FE] p-4">
 
-            <div className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
+            <div className="min-h-[850px] p-8 bg-white rounded-md">
                 <div>
-                    <div className="mx-auto my-10 p-5 bg-white shadow-lg rounded-xl">
-                        <h1 className="text-3xl font-semibold text-center mb-8">রোগীর প্রোফাইল</h1>
+                     <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
+                            রোগীর প্রোফাইল
+                        </h2>
+                    <div className="mx-auto my-10 p-8 bg-white shadow-lg rounded-md border">
+                       
                         <div className="flex justify-center mb-6">
                             <div className="avatar">
                                 <div className="w-32 h-32 rounded-full border-2">
@@ -70,7 +72,7 @@ const PatientProfile = () => {
                             </div>
                         </div>
 
-                        <form onSubmit={handleSave}>
+                        <form onSubmit={handleSave} className=''>
                             {/* Profile Picture Upload */}
                             <div className="mt-6 mb-4 flex justify-center">
                                 <div>
@@ -204,14 +206,14 @@ const PatientProfile = () => {
                                 {isEditable ? (
                                     <Button type="submit" text="প্রোফাইল সংরক্ষণ করুন" />
                                 ) : (
-                                    <div onClick={() => setIsEditable(true)}  type="button">
-                                         <Button
-                                       
-                                        text="এডিট প্রোফাইল"
-                                         // Enable edit mode
-                                    />
+                                    <div onClick={() => setIsEditable(true)} type="button">
+                                        <Button
+
+                                            text="এডিট প্রোফাইল"
+                                        // Enable edit mode
+                                        />
                                     </div>
-                                   
+
                                 )}
                                 {isEditable && (
                                     <Button
