@@ -26,10 +26,10 @@ const DoctorHelp = () => {
   };
 
   return (
-    <div>
-        <NavBarDoctor></NavBarDoctor>
-      <div  className="min-h-[850px] p-16 bg-[#E1ECFF] rounded-lg mt-16">
-        <h1 className="text-3xl font-bold mb-6 text-center">
+    <div className="bg-[#EFF7FE] p-4">
+       
+      <div  className="min-h-[850px] p-8 bg-white rounded-md">
+        <h1 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
           রোগীদের সহায়তা করুন
         </h1>
 
@@ -41,20 +41,21 @@ const DoctorHelp = () => {
           questions.map((q) => (
             <div key={q.id} className="card bg-base-100 shadow-md border mb-6">
               <div className="card-body">
-                <h2 className="font-semibold text-lg text-left">রোগীর প্রশ্ন:</h2>
-                <p className="text-gray-800 text-left">{q.question}</p>
-                <p className="text-xs text-gray-400 mt-1">
+                <p className="text-xs text-gray-400 mt-1 text-left">
                   পোস্টেড : {q.timestamp}
                 </p>
+                <h2 className="font-semibold text-lg text-left">রোগীর প্রশ্ন:</h2>
+                <p className="text-gray-800 text-left">{q.question}</p>
+                
 
                 <div className="divider"></div>
 
                 {q.reply ? (
-                  <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded-md">
-                    <h3 className="font-semibold text-green-700 mb-1">
+                  <div className="bg-[#EFF7FE] p-3 rounded-md">
+                    <h3 className="font-semibold text-green-700 mb-1 text-left">
                       আপনার উত্তর:
                     </h3>
-                    <p>{q.reply}</p>
+                    <p className="text-left">{q.reply}</p>
                   </div>
                 ) : (
                   <>

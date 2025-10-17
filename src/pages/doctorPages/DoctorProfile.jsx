@@ -140,15 +140,18 @@ const DoctorProfile = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#E6F0FF]">
-      <NavBarDoctor />
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white shadow-lg rounded-xl p-8 w-full max-w-7xl pb-8 mb-8 mt-16"
-      >
-        <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
+    <div className=" min-h-screen bg-[#E6F0FF]">
+   
+     <div className='p-8 bg-white rounded-md'>
+     <div className='bg-white shadow-lg rounded-md border p-8 w-full max-w-7xl pb-8 mb-8 '>
+      <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
           ডাক্তারের প্রোফাইল
         </h2>
+        <form
+        onSubmit={handleSubmit}
+        className=""
+      >
+        
 
         {/* Profile Picture */}
         <div className="flex flex-col items-center mb-6">
@@ -166,7 +169,7 @@ const DoctorProfile = () => {
                   className="rounded-full w-36 h-36 object-cover"
                 />
               ) : (
-                <span className="text-3xl">👤</span>
+                <span className="text-3xl"></span>
               )}
             </div>
           </div>
@@ -184,7 +187,7 @@ const DoctorProfile = () => {
         {/* Fields with Labels */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="label-text font-semibold mb-1">পূর্ণ নাম</label>
+            <label className="label-text font-semibold mb-1 text-left">পূর্ণ নাম</label>
             <input
               type="text"
               name="fullName"
@@ -196,7 +199,7 @@ const DoctorProfile = () => {
             />
           </div>
           <div>
-            <label className="label-text font-semibold mb-1">বিশেষায়ন</label>
+            <label className="label-text font-semibold mb-1 text-left">বিশেষায়ন</label>
             <input
               type="text"
               name="specialization"
@@ -211,7 +214,7 @@ const DoctorProfile = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="label-text font-semibold mb-1">পদবি</label>
+            <label className="label-text font-semibold mb-1 text-left">পদবি</label>
             <input
               type="text"
               name="designation"
@@ -223,7 +226,7 @@ const DoctorProfile = () => {
             />
           </div>
           <div>
-            <label className="label-text font-semibold mb-1">ডিগ্রি</label>
+            <label className="label-text font-semibold mb-1 text-left">ডিগ্রি</label>
             <input
               type="text"
               name="degrees"
@@ -238,7 +241,7 @@ const DoctorProfile = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="label-text font-semibold mb-1">পরামর্শ ফি (টাকা)</label>
+            <label className="label-text font-semibold mb-1 text-left">পরামর্শ ফি (টাকা)</label>
             <input
               type="number"
               name="consultationFee"
@@ -250,7 +253,7 @@ const DoctorProfile = () => {
             />
           </div>
           <div>
-            <label className="label-text font-semibold mb-1">বিশেষ দক্ষতা</label>
+            <label className="label-text font-semibold mb-1 text-left">বিশেষ দক্ষতা</label>
             <input
               type="text"
               name="expertise"
@@ -264,7 +267,7 @@ const DoctorProfile = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="label-text font-semibold mb-1">প্রতিষ্ঠান</label>
+            <label className="label-text font-semibold mb-1 text-left">প্রতিষ্ঠান</label>
             <input
               type="text"
               name="institute"
@@ -275,7 +278,7 @@ const DoctorProfile = () => {
             />
           </div>
           <div>
-            <label className="label-text font-semibold mb-1">রেজিস্ট্রেশন নাম্বার</label>
+            <label className="label-text font-semibold mb-1 text-left">BMDC রেজিস্ট্রেশন নাম্বার</label>
             <input
               type="text"
               name="regNo"
@@ -289,7 +292,7 @@ const DoctorProfile = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="label-text font-semibold mb-1">অভিজ্ঞতার বছর</label>
+            <label className="label-text font-semibold mb-1 text-left">অভিজ্ঞতার বছর</label>
             <input
               type="number"
               name="yearsOfExperience"
@@ -300,7 +303,7 @@ const DoctorProfile = () => {
             />
           </div>
           <div>
-            <label className="label-text font-semibold mb-1">পরামর্শের মাধ্যম</label>
+            <label className="label-text font-semibold mb-1 text-left">পরামর্শের মাধ্যম</label>
             <select
               name="medium"
               value={formData.medium}
@@ -315,11 +318,11 @@ const DoctorProfile = () => {
               <option value="both">উভয়ই</option>
             </select>
           </div>
-        </div>
+        </div> 
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div>
-            <label className="label-text font-semibold mb-1">ইমেইল</label>
+            <label className="label-text font-semibold mb-1 text-left">ইমেইল</label>
             <input
               type="email"
               name="email"
@@ -330,7 +333,7 @@ const DoctorProfile = () => {
             />
           </div>
           <div>
-            <label className="label-text font-semibold mb-1">মোবাইল নাম্বার</label>
+            <label className="label-text font-semibold mb-1 text-left">মোবাইল নাম্বার</label>
             <input
               type="text"
               name="mobileNo"
@@ -341,7 +344,7 @@ const DoctorProfile = () => {
             />
           </div>
           <div>
-            <label className="label-text font-semibold mb-1">বিকাশ নাম্বার</label>
+            <label className="label-text font-semibold mb-1 text-left">বিকাশ নাম্বার</label>
             <input
               type="text"
               name="bkashAccount"
@@ -397,7 +400,7 @@ const DoctorProfile = () => {
         </div>
 
         <div className="mb-6">
-          <label className="label-text font-semibold mb-1">সংক্ষিপ্ত বায়ো</label>
+          <label className="label-text font-semibold mb-1 text-left">সংক্ষিপ্ত পরিচয়</label>
           <textarea
             name="shortBio"
             value={formData.shortBio}
@@ -417,7 +420,7 @@ const DoctorProfile = () => {
           ) : (
             <>
               <div className="w-full">
-                <Button type="submit" text="💾 প্রোফাইল সংরক্ষণ করুন" />
+                <Button type="submit" text="প্রোফাইল সংরক্ষণ করুন" />
               </div>
               <div className="w-full" onClick={handleCancel}>
                 <Button type="button" text="বাতিল করুন" />
@@ -425,13 +428,20 @@ const DoctorProfile = () => {
             </>
           )}
 
-          {!isEditing && (
+          
+        </div>
+      </form>
+       <div className='mt-4'>
+        {!isEditing && (
             <div className="w-full" onClick={handleVerify}>
               <Button type="button" text="প্রোফাইল ভেরিফাই করুন" />
             </div>
           )}
-        </div>
-      </form>
+      </div>
+     </div>
+      
+     
+     </div>
     </div>
   );
 };

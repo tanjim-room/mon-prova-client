@@ -87,9 +87,9 @@ const PatientProfile = () => {
                             </div>
 
                             {/* Form Inputs */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
                                 <div>
-                                    <label className="block mb-2 text-sm font-semibold">পূর্ণ নাম</label>
+                                    <label className="block mb-2 text-sm font-semibold text-left">পূর্ণ নাম</label>
                                     <input
                                         type="text"
                                         name="fullName"
@@ -100,7 +100,7 @@ const PatientProfile = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm font-semibold">বয়স</label>
+                                    <label className="block mb-2 text-sm font-semibold text-left">বয়স</label>
                                     <input
                                         type="text"
                                         name="age"
@@ -111,7 +111,7 @@ const PatientProfile = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm font-semibold">জেন্ডার</label>
+                                    <label className="block mb-2 text-sm font-semibold text-left">জেন্ডার</label>
                                     <select
                                         name="gender"
                                         value={profile.gender}
@@ -126,7 +126,7 @@ const PatientProfile = () => {
                                     </select>
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm font-semibold">মোবাইল</label>
+                                    <label className="block mb-2 text-sm font-semibold text-left">মোবাইল</label>
                                     <input
                                         type="text"
                                         name="phone"
@@ -137,7 +137,7 @@ const PatientProfile = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm font-semibold">ইমেইল</label>
+                                    <label className="block mb-2 text-sm font-semibold text-left">ইমেইল</label>
                                     <input
                                         type="email"
                                         name="email"
@@ -148,7 +148,7 @@ const PatientProfile = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm font-semibold">রক্তের গ্রুপ</label>
+                                    <label className="block mb-2 text-sm font-semibold text-left">রক্তের গ্রুপ</label>
                                     <select
                                         name="bloodGroup"
                                         value={profile.bloodGroup}
@@ -168,7 +168,7 @@ const PatientProfile = () => {
                                     </select>
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm font-semibold">ঠিকানা</label>
+                                    <label className="block mb-2 text-sm font-semibold text-left">ঠিকানা</label>
                                     <textarea
                                         name="address"
                                         value={profile.address}
@@ -178,7 +178,7 @@ const PatientProfile = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm font-semibold">জরুরি যোগাযোগ</label>
+                                    <label className="block mb-2 text-sm font-semibold text-left">জরুরি যোগাযোগ</label>
                                     <input
                                         type="text"
                                         name="emergencyContact"
@@ -189,7 +189,7 @@ const PatientProfile = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-sm font-semibold">পেশা</label>
+                                    <label className="block mb-2 text-sm font-semibold text-left">পেশা</label>
                                     <input
                                         type="text"
                                         name="profession"

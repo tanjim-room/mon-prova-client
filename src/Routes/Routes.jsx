@@ -39,6 +39,7 @@ import ContactUs from '../pages/ContactUs';
 import DashboardLayout from '../layouts/DashboardLayout';
 import DashboardLayoutDoctor from '../layouts/DashboardLayoutDoctor';
 import HomePatient from '../pages/HomePatient';
+import HomeDoctor from '../pages/HomeDoctor';
 
 
 const routes = createBrowserRouter([
@@ -190,6 +191,10 @@ const routes = createBrowserRouter([
                 element: <DashboardLayoutDoctor></DashboardLayoutDoctor>,
                 children: [
                     {
+                        path: '/doctorDashboard',
+                        element: <HomeDoctor></HomeDoctor>
+                    },
+                    {
                         path: 'appointmentDoctor',
                         element: <DoctorAppointment></DoctorAppointment>
                     },
@@ -202,6 +207,16 @@ const routes = createBrowserRouter([
                         element: <Schedule></Schedule>
                     },
                     {
+                        path: 'income',
+                        element: <Income></Income>
+                    },
+                    {
+                        path: 'doctorHelp',
+                        element: <DoctorHelp></DoctorHelp>
+                    },
+                    {
+                        path: 'doctorProfile',
+                        element: <DoctorProfile></DoctorProfile>
                     }
                 ]
                 ,

@@ -90,7 +90,7 @@ const Schedule = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
                   {timeSlots.map((slot) => {
                     const isSelected = selectedSlots[key]?.includes(slot);
-                    const btnClass = isSelected ? "btn btn-success text-white text-xs" : "btn btn-outline text-xs";
+                    const btnClass = isSelected ? "btn bg-[#007AF5] text-white text-xs" : "btn btn-outline text-xs";
 
                     return (
                       <button key={slot} className={btnClass} onClick={() => toggleSlot(dayName, slot)}>
@@ -105,7 +105,7 @@ const Schedule = () => {
         </div>
 
         <div className="mt-10 text-center">
-          <button onClick={handleSave} className="btn btn-success px-10 text-lg">
+          <button onClick={handleSave} className="btn bg-[#007AF5] px-10 text-lg text-white">
             সময়সূচি সংরক্ষণ করুন
           </button>
         </div>

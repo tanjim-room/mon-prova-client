@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import NavBar from '../../components/NavBar';
 import DoctorCard from '../../components/cards/DoctorCard';
+import { IoSearch } from "react-icons/io5";
+import { MdDeleteForever } from "react-icons/md";
 const DoctorList = () => {
   const [doctors, setDoctors] = useState([])
   const doctors_data =  [
@@ -313,27 +315,70 @@ const DoctorList = () => {
   ]
 
 
+  const [query, setQuery] = useState('');
+
   useEffect(() => {
     fetch("doctorInfo.json")
       .then(res => res.json())
       .then(data => setDoctors(data))
+      .catch(() => setDoctors([]));
   }, []);
+
+  const dataSource = doctors && doctors.length ? doctors : doctors_data;
+
+  const filteredDoctors = useMemo(() => {
+    if (!query) return dataSource;
+    const q = query.trim().toLowerCase();
+    return dataSource.filter(d => {
+      const name = (d.fullName || '').toLowerCase();
+      const desig = (d.designation || '').toLowerCase();
+      const inst = (d.institute || '').toLowerCase();
+      const expertise = (d.expertise || []).join(' ').toLowerCase();
+      return name.includes(q) || desig.includes(q) || inst.includes(q) || expertise.includes(q);
+    });
+  }, [query, dataSource]);
 
   return (
     <div>
 
       <div className="min-h-[850px] p-4 bg-[#EFF7FE] rounded-md">
 
-        <div className='bg-white p-8 border rounded-md'>
-          <div className=''>
-             <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
-            ডাক্তারদের তালিকা
-          </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
-            {
-              doctors_data.map((doctor) => <DoctorCard key={doctor.doctorID} doctor={doctor}></DoctorCard>)
-            }
+        <div className='bg-white p-6 border rounded-md'>
+          <div className=' gap-4 mb-6'>
+            <div>
+              <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>ডাক্তারদের তালিকা</h2>
+            </div>
+
+            <div className='flex items-center gap-2 w-full'>
+              <input
+                value={query}
+                onChange={e => setQuery(e.target.value)}
+                onKeyDown={e => { if (e.key === 'Enter') e.preventDefault(); }}
+                placeholder='নাম, বিশেষত্ব, ইনস্টিটিউট অনুসন্ধান করুন...'
+                className='w-full border rounded-md px-3 py-2 text-sm'
+                aria-label='search-doctor'
+              />
+              <button onClick={() => {}} className='px-6 py-2 bg-[#007AF5] text-white rounded-md text-sm'>
+                <div className='flex justify-center gap-2 items-center'>
+                  <span  className='text-lg'><IoSearch></IoSearch></span>
+                  <span>খুঁজুন</span> 
+                  
+                  </div>
+                  </button>
+              <button onClick={() => setQuery('')} className='px-6 py-2 bg-[#E8594A] text-white rounded-md text-sm'>
+                 <div className='flex justify-center gap-2 items-center'>
+                  <span className='text-lg'><MdDeleteForever></MdDeleteForever></span>
+                  <span>মুছুন</span> 
+                  
+                  </div>
+              </button>
+            </div>
           </div>
+
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
+            {
+              filteredDoctors.map((doctor) => <DoctorCard key={doctor.doctorID} doctor={doctor} />)
+            }
           </div>
         </div>
       </div>
