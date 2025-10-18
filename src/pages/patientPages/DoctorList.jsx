@@ -3,9 +3,13 @@ import NavBar from '../../components/NavBar';
 import DoctorCard from '../../components/cards/DoctorCard';
 import { IoSearch } from "react-icons/io5";
 import { MdDeleteForever } from "react-icons/md";
+
 const DoctorList = () => {
-  const [doctors, setDoctors] = useState([])
-  const doctors_data =  [
+  const [doctors, setDoctors] = useState([]);
+  const [query, setQuery] = useState('');
+  const [searchTerm, setSearchTerm] = useState(''); // Trigger search on button click
+
+   const doctors_data =  [
     {
       "doctorID": "1",
       "fullName": "ডাঃ রহমান আহমেদ",
@@ -314,9 +318,6 @@ const DoctorList = () => {
     }
   ]
 
-
-  const [query, setQuery] = useState('');
-
   useEffect(() => {
     fetch("doctorInfo.json")
       .then(res => res.json())
@@ -326,9 +327,10 @@ const DoctorList = () => {
 
   const dataSource = doctors && doctors.length ? doctors : doctors_data;
 
+  // Filter doctors based on searchTerm
   const filteredDoctors = useMemo(() => {
-    if (!query) return dataSource;
-    const q = query.trim().toLowerCase();
+    if (!searchTerm) return dataSource;
+    const q = searchTerm.trim().toLowerCase();
     return dataSource.filter(d => {
       const name = (d.fullName || '').toLowerCase();
       const desig = (d.designation || '').toLowerCase();
@@ -337,50 +339,49 @@ const DoctorList = () => {
       const degree = (d.degrees || []).join(' ').toLowerCase();
       return name.includes(q) || desig.includes(q) || inst.includes(q) || expertise.includes(q) || degree.includes(q);
     });
-  }, [query, dataSource]);
+  }, [searchTerm, dataSource]);
+
+  const handleSearch = () => {
+    setSearchTerm(query);
+  };
+
+  const handleReset = () => {
+    setQuery('');
+    setSearchTerm('');
+  };
 
   return (
-    <div>
+    <div className="min-h-[850px] p-4 bg-[#EFF7FE] rounded-md">
+      <div className='bg-white p-6 border rounded-md'>
+        <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
+          ডাক্তারদের তালিকা
+        </h2>
 
-      <div className="min-h-[850px] p-4 bg-[#EFF7FE] rounded-md">
+        <div className='flex items-center gap-2 w-full mb-6'>
+          <input
+            value={query}
+            onChange={e => setQuery(e.target.value)}
+            onKeyDown={e => { if (e.key === 'Enter') e.preventDefault(); }}
+            placeholder='নাম, বিশেষত্ব, ইনস্টিটিউট অনুসন্ধান করুন...'
+            className='w-full border rounded-md px-3 py-2 text-sm'
+            aria-label='search-doctor'
+          />
+          <button onClick={handleSearch} className='px-6 py-2 bg-[#007AF5] text-white rounded-md text-sm flex items-center gap-2'>
+            <IoSearch className='text-lg' /> খুঁজুন
+          </button>
+          <button onClick={handleReset} className='px-6 py-2 bg-[#E8594A] text-white rounded-md text-sm flex items-center gap-2'>
+            <MdDeleteForever className='text-lg' /> মুছুন
+          </button>
+        </div>
 
-        <div className='bg-white p-6 border rounded-md'>
-          <div className=' gap-4 mb-6'>
-            <div>
-              <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>ডাক্তারদের তালিকা</h2>
-            </div>
-
-            <div className='flex items-center gap-2 w-full'>
-              <input
-                value={query}
-                onChange={e => setQuery(e.target.value)}
-                onKeyDown={e => { if (e.key === 'Enter') e.preventDefault(); }}
-                placeholder='নাম, বিশেষত্ব, ইনস্টিটিউট অনুসন্ধান করুন...'
-                className='w-full border rounded-md px-3 py-2 text-sm'
-                aria-label='search-doctor'
-              />
-              <button onClick={() => {}} className='px-6 py-2 bg-[#007AF5] text-white rounded-md text-sm'>
-                <div className='flex justify-center gap-2 items-center'>
-                  <span  className='text-lg'><IoSearch></IoSearch></span>
-                  <span>খুঁজুন</span> 
-                  
-                  </div>
-                  </button>
-              <button onClick={() => setQuery('')} className='px-6 py-2 bg-[#E8594A] text-white rounded-md text-sm'>
-                 <div className='flex justify-center gap-2 items-center'>
-                  <span className='text-lg'><MdDeleteForever></MdDeleteForever></span>
-                  <span>মুছুন</span> 
-                  
-                  </div>
-              </button>
-            </div>
-          </div>
-
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
-            {
-              filteredDoctors.map((doctor) => <DoctorCard key={doctor.doctorID} doctor={doctor} />)
-            }
-          </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
+          {filteredDoctors.length > 0 ? (
+            filteredDoctors.map(doctor => <DoctorCard key={doctor.doctorID} doctor={doctor} />)
+          ) : (
+            <p className='col-span-full text-center text-gray-500 mt-8 font-medium'>
+              কোন ডাক্তার পাওয়া যায়নি
+            </p>
+          )}
         </div>
       </div>
     </div>

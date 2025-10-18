@@ -18,4 +18,15 @@ export default class BaseModel {
   clone() {
     return new this.constructor(JSON.parse(JSON.stringify(this.toJSON())));
   }
+
+  // basic validation hook: subclasses can override
+  validate() {
+    return { valid: true, errors: [] };
+  }
+
+  // update attributes in-place with a shallow merge
+  update(attrs = {}) {
+    Object.assign(this, attrs);
+    return this;
+  }
 }

@@ -12,4 +12,18 @@ export default class User extends BaseModel {
 
   isDoctor() { return this.role === 'doctor'; }
   isPatient() { return this.role === 'patient'; }
+
+  update(attrs = {}) {
+    return super.update(attrs);
+  }
+
+  displayName() {
+    return this.name || this.email || 'Anonymous';
+  }
+
+  validate() {
+    const errors = [];
+    if (!this.email) errors.push('email_required');
+    return { valid: errors.length === 0, errors };
+  }
 }
