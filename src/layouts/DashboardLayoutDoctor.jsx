@@ -7,6 +7,7 @@ import {
   FaHandsHelping,
   FaUser,
   FaClock,
+  FaSignOutAlt
 } from "react-icons/fa";
 import { RiLogoutCircleRLine } from "react-icons/ri";
 
@@ -17,7 +18,7 @@ const doctorMenuItems = [
   { title: "ইনকাম", link: "/doctorDashboard/income", icon: <FaMoneyBillWave /> },
   { title: "সাহায্য", link: "/doctorDashboard/doctorHelp", icon: <FaHandsHelping /> },
   { title: "প্রোফাইল", link: "/doctorDashboard/doctorProfile", icon: <FaUser /> },
-  { title: "লগ আউট", link: "/", icon: <RiLogoutCircleRLine /> },
+  { title: "লগ আউট", link: "/", icon: <FaSignOutAlt />},
 ];
 
 const DashboardLayoutDoctor = () => {

@@ -16,7 +16,7 @@ const adminMenuItems = [
   { title: "রোগীর তথ্য", link: "/adminDashboard/patientInfo", icon: <FaUserInjured /> },
   { title: "ডাক্তারের তথ্য", link: "/adminDashboard/doctorInfo", icon: <FaUserMd /> },
   { title: "অ্যাপয়েন্টমেন্ট তথ্য", link: "/adminDashboard/appointmentInfo", icon: <FaCalendarAlt /> },
-  { title: "ভেরিফিকেশন রিকুয়েস্ট", link: "/adminDashboard/verification", icon: <FaCheckCircle /> },
+  { title: "ভেরিফাই রিকুয়েস্ট", link: "/adminDashboard/verification", icon: <FaCheckCircle /> },
   { title: "রিসোর্স", link: "/adminDashboard/resources", icon: <FaBookOpen /> },
   { title: "রিসোর্স আপলোড", link: "/adminDashboard/uploadResource", icon: <FaUpload /> },
   { title: "হেল্প সেকশন", link: "/adminDashboard/help", icon: <FaHandsHelping /> },

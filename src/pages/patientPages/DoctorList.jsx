@@ -334,7 +334,8 @@ const DoctorList = () => {
       const desig = (d.designation || '').toLowerCase();
       const inst = (d.institute || '').toLowerCase();
       const expertise = (d.expertise || []).join(' ').toLowerCase();
-      return name.includes(q) || desig.includes(q) || inst.includes(q) || expertise.includes(q);
+      const degree = (d.degrees || []).join(' ').toLowerCase();
+      return name.includes(q) || desig.includes(q) || inst.includes(q) || expertise.includes(q) || degree.includes(q);
     });
   }, [query, dataSource]);
 

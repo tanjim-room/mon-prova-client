@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-
+import { IoArrowBackSharp } from "react-icons/io5";
 // === Import your JSON data ===
 import testsData from "../../../public/assessments.json";
+import { Link } from "react-router-dom";
 const Test = () => {
 
     const [selectedTest, setSelectedTest] = useState(null);
@@ -69,15 +70,14 @@ const Test = () => {
     }, [result]);
 
     return (
-        <div className="min-h-screen p-6">
+        <div className="min-h-screen p-4  rounded-md">
 
-            <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
-                মনপ্রভা মানসিক স্বাস্থ্য মূল্যায়ন
-            </h2>
-
-            {/* ====== Test Card View ====== */}
+            {/* Test Card View */}
             {!selectedTest && (
                 <div className="grid md:grid-cols-1 gap-6">
+                       <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
+                মনপ্রভা মানসিক স্বাস্থ্য মূল্যায়ন
+            </h2>
                     {testsData.map((test) => (
                         <div
                             key={test.id}
@@ -102,12 +102,17 @@ const Test = () => {
             {/* Question View */}
             {selectedTest && (
                 <div className="mx-auto bg-white p-8 rounded-md shadow">
-                    <button
-                        onClick={() => setSelectedTest(null)}
-                        className="mb-6 text-blue-600 hover:underline"
-                    >
-                        ← ফিরে যান
-                    </button>
+                    {/* Back Button */}
+                    <div className='mb-4'>
+                        <button className="border-2 rounded-md flex justify-center items-center hover:bg-[#E8594A] hover:text-white transition">
+                            <Link to="/patientDashboard/assessment" className="flex items-center gap-6 px-4 py-2 font-semibold text-xl rounded-md">
+                                <div className='flex gap-4 items-center'>
+                                    <span className="text-xl"><IoArrowBackSharp /></span>
+                                    <span className='text-center text-lg'>পিছনে যান</span>
+                                </div>
+                            </Link>
+                        </button>
+                    </div>
 
                     <h2 className="text-2xl font-semibold text-blue-700 mb-4">
                         {selectedTest.title}

@@ -13,6 +13,7 @@ const AppointmentDetailsPatient = () => {
         doctorName, speciality, mode, date, slot, status, consultationFee, img, institute, degrees, regNo, designation, yearsOfExperience, expertise, shortBio, medium
 
     } = appointment
+   
     return (
         <div className='bg-[#EFF7FE]'>
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../../components/NavBar";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 import { IoMdDownload } from "react-icons/io";
 import Logo from "../../components/Logo";
 const Prescription = () => {
@@ -11,6 +12,23 @@ const Prescription = () => {
     const allPrescriptions = JSON.parse(localStorage.getItem("prescriptions") || "[]");
     setPrescriptions(allPrescriptions);
   }, []);
+
+   // Handle prescription download click
+      const handleDownload = () => {
+          if (!prescriptions) {
+            Swal.fire({
+              icon: 'info',
+              title: 'কোনো প্রেসক্রিপশন পাওয়া যায়নি!',
+              text: 'এই অ্যাপয়েন্টমেন্টের জন্য এখনো কোনো প্রেসক্রিপশন তৈরি করা হয়নি।',
+              confirmButtonColor: '#007AF5',
+              confirmButtonText: 'ঠিক আছে'
+            });
+            return;
+          }
+      
+          // Redirect to download/view page
+          navigate(`/doctorDashboard/createPrescription/${aID}`);
+        };
 
   return (
     <div className="bg-[#EFF7FE] p-4">
@@ -46,7 +64,7 @@ const Prescription = () => {
                   <p><strong>লিখার সময়ঃ</strong> {new Date(pres.createdAt).toLocaleString()}</p> */}
 
                     <div className="mt-4">
-                      <button className="w-full border-2 rounded-md flex justify-center items-center text-[#007AF5] hover:bg-[#E8594A] hover:text-white transition">
+                      <button onClick={handleDownload} className="w-full border-2 rounded-md flex justify-center items-center text-[#007AF5] hover:bg-[#E8594A] hover:text-white transition">
                         <Link
                           to={``}
                           className="flex items-center gap-6 px-4 py-2 font-semibold text-xl rounded-md "

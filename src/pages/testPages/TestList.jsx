@@ -1,30 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import NavBar from '../../components/NavBar';
-import FeatureCard from '../../components/cards/FeatureCards';
-import AssessmentCard from '../../components/cards/AssessmentCard';
-import Test from '../testPages/Test';
-import { useNavigate, Link } from 'react-router-dom';
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { IoArrowBackSharp } from "react-icons/io5";
 import testsData from "../../../public/assessments.json";
 
+const TestList = () => {
+  const navigate = useNavigate();
 
-const Assessment = () => {
-
-    const [assessments, setAssessments] = useState([]);
-    
-        useEffect(() => {
-            fetch("assessments.json")
-                .then(res => res.json())
-                .then(data => setAssessments(data))
-        }, []);
-
-        console.log(assessments);
-           const navigate = useNavigate();
   return (
-    <div className="min-h-screen p-4 rounded-md bg-[#EFF7FE]">
-      <div className='bg-white rounded-md  border p-8'>
-          {/* Back Button */}
-      {/* <div className="mb-4">
+    <div className="min-h-screen p-4 rounded-md">
+      <h2 className="text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border">
+        মনপ্রভা মানসিক স্বাস্থ্য মূল্যায়ন
+      </h2>
+
+      {/* Back Button */}
+      <div className="mb-4">
         <button className="border-2 rounded-md flex justify-center items-center hover:bg-[#E8594A] hover:text-white transition">
           <Link
             to="/patientDashboard"
@@ -34,21 +23,16 @@ const Assessment = () => {
               <span className="text-xl">
                 <IoArrowBackSharp />
               </span>
-              <span className="text-center text-lg">ফিরে যান</span>
+              <span className="text-center text-lg">পিছনে যান</span>
             </div>
           </Link>
         </button>
-      </div> */}
-        <h2 className="text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border">
-        মনপ্রভা মানসিক স্বাস্থ্য মূল্যায়ন
-      </h2>
-
-    
+      </div>
 
       <div className="grid md:grid-cols-2 gap-6">
         {testsData.map((test) => (
           <div
-            key={test.ID}
+            key={test.id}
             onClick={() => navigate(`/patientDashboard/assessment/${test.id}`)}
             className="cursor-pointer bg-[#EFF7FE] p-8 rounded-md shadow hover:shadow-lg transition flex flex-col items-center border space-y-2"
           >
@@ -61,9 +45,8 @@ const Assessment = () => {
           </div>
         ))}
       </div>
-      </div>
     </div>
   );
 };
 
-export default Assessment;
+export default TestList;

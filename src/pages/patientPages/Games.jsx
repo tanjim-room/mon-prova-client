@@ -21,7 +21,7 @@ const Games = () => {
                             গেমস সমুহ
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-                            {/* Internal Games */}
+                            {/* Internal Games Section */}
                             <div className="card shadow-lg  border">
                                 <figure><img src="https://i.ibb.co.com/TBcH0DY3/breathing.png" className='w-36 h-36 object-cover' alt="Bubble Calm" /></figure>
                                 <div className="card-body">
@@ -55,7 +55,7 @@ const Games = () => {
                                 </div>
                             </div>
 
-                            {/* External Games */}
+                            {/* External Games Section */}
                             <div className="card shadow-lg ] border">
                                 <figure><img src="https://i.ibb.co.com/4gffBpq8/fruit.png" className='w-36 h-36 object-cover' alt="Fruit Ninja" /></figure>
                                 <div className="card-body">

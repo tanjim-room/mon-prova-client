@@ -4,6 +4,7 @@ import Button from "../components/buttons/Button";
 import Lottie from "lottie-react";
 import Doctor from "../../public/Online Doctor.json";
 import { Link, useNavigate } from "react-router-dom";
+import Yoga from '../../public/yoga black.json';
 import Swal from "sweetalert2";
 
 const ResetPassPatient = () => {
@@ -66,7 +67,7 @@ const ResetPassPatient = () => {
             পাসওয়ার্ড রিসেট করুন
           </h1>
 
-          <form onSubmit={handleReset} className="mt-8 space-y-4">
+          <form onSubmit={handleReset} className="w-full mt-8 space-y-4">
             {/* Reset Email */}
             <div>
               <input
@@ -121,7 +122,7 @@ const ResetPassPatient = () => {
 
         {/* Right Side Animation */}
         <div className="hidden md:flex items-center justify-center bg-gradient-to-tr from-[#c3e1f1] to-[#76a4f1] p-6">
-          <Lottie animationData={Doctor} />
+          <Lottie animationData={Yoga} />
         </div>
       </div>
     </div>

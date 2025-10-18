@@ -4,6 +4,7 @@ import NavBar from "../../components/NavBar";
 import  BlogCard from "../../components/cards/BlogCard"
 import  VideoCard from "../../components/cards/VideoCard"
 import Logo from "../../components/Logo";
+
 // Resources Data
 const resources = {
   videos: [
@@ -41,7 +42,7 @@ const resources = {
       id: 1,
       title: "মানসিক চাপ কমানোর ১০টি উপায়",
       description: "প্রায়োগিক টিপস যা মানসিক সুস্থতা উন্নত করে।",
-      slug: "reduce-stress", // internal route slug
+      slug: "reduce-stress", 
       thumbnail: "https://i.ibb.co.com/pjfhybWm/1690718202674.jpg",
     },
     {

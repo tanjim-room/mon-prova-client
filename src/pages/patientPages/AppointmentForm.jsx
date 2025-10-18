@@ -5,7 +5,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import dayjs from "dayjs";
 import Button from '../../components/buttons/Button';
-import { useLoaderData, useParams, Link } from 'react-router-dom';
+import { useLoaderData, useParams, Link, useNavigate } from 'react-router-dom';
 import Swal from "sweetalert2";
 import { ins } from 'framer-motion/client';
 import { IoArrowBackSharp } from "react-icons/io5";
@@ -16,6 +16,7 @@ import { IoArrowBackSharp } from "react-icons/io5";
 
 const AppointmentForm = () => {
     const { doctors, slots } = useLoaderData();
+    const navigate = useNavigate()
     const { doctorID } = useParams();
     const doctor = slots.find(d => d.doctorID === doctorID);
 
@@ -99,6 +100,7 @@ const AppointmentForm = () => {
                     icon: "success",
                     confirmButtonText: "ঠিক আছে"
                 });
+                navigate(`/patientDashboard/appointment`);
             }
         });
     };

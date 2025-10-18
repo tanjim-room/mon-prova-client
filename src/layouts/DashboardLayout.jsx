@@ -10,6 +10,7 @@ import {
   FaHandsHelping,
   FaUser,
   FaHome,
+  FaSignOutAlt
 } from "react-icons/fa";
 import { RiLogoutCircleRLine } from "react-icons/ri";
 
@@ -23,7 +24,7 @@ const menuItems = [
   { title: "গেমস", link: "/patientDashboard/games", icon: <FaGamepad /> },
   { title: "সাহায্য", link: "/patientDashboard/patientHelp", icon: <FaHandsHelping /> },
   { title: "প্রোফাইল", link: "/patientDashboard/patientProfile", icon: <FaUser /> },
-  { title: "লগ আউট", link: "/", icon: <RiLogoutCircleRLine /> },
+  { title: "লগ আউট", link: "/", icon: <FaSignOutAlt /> },
 ];
 
 const DashboardLayout = () => {

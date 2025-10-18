@@ -7,8 +7,12 @@ const AppointmentDetailsDoctor = () => {
   const { aID } = useParams();
   const navigate = useNavigate();
 
+  // Load local data
+  const prescriptions = JSON.parse(localStorage.getItem("prescriptions") || "[]");
   const appointments = JSON.parse(localStorage.getItem("appointments") || "[]");
+
   const appointment = appointments.find(a => a.appointmentID === parseInt(aID, 10));
+  const prescription = prescriptions.find(p => p.appointmentID === aID);
 
   if (!appointment) {
     return <p>অ্যাপয়েন্টমেন্ট পাওয়া যায়নি।</p>;
@@ -19,7 +23,7 @@ const AppointmentDetailsDoctor = () => {
     problem, date, slot, mode, consultationFee
   } = appointment;
 
-  // Session End Confirmation
+  // Handle session end
   const handleEndSession = () => {
     Swal.fire({
       title: 'আপনি কি সত্যিই সেশন শেষ করতে চান?',
@@ -31,14 +35,27 @@ const AppointmentDetailsDoctor = () => {
       cancelButtonText: 'বাতিল করুন'
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire(
-          'সেশন শেষ হয়েছে!',
-          'রোগীর সেশন সফলভাবে শেষ হয়েছে।',
-          'success'
-        );
+        Swal.fire('সেশন শেষ হয়েছে!', 'রোগীর সেশন সফলভাবে শেষ হয়েছে।', 'success');
         navigate("/doctorDashboard/appointmentDoctor");
       }
     });
+  };
+
+  // 🟢 Handle prescription download click
+  const handleDownloadPrescription = () => {
+    if (!prescription) {
+      Swal.fire({
+        icon: 'info',
+        title: 'কোনো প্রেসক্রিপশন পাওয়া যায়নি!',
+        text: 'এই অ্যাপয়েন্টমেন্টের জন্য এখনো কোনো প্রেসক্রিপশন তৈরি করা হয়নি।',
+        confirmButtonColor: '#007AF5',
+        confirmButtonText: 'ঠিক আছে'
+      });
+      return;
+    }
+
+    // Redirect to download/view page
+    navigate(`/doctorDashboard/createPrescription/${aID}`);
   };
 
   return (
@@ -72,6 +89,7 @@ const AppointmentDetailsDoctor = () => {
             </div>
           </div>
 
+          {/* Patient Info */}
           <div className='border p-8 rounded-md'>
             <h2 className='text-xl px-4 py-2 text-gray-800 mb-6 font-bold text-center rounded-md bg-[#EFF7FE] border'>
               রোগীর তথ্যসমূহ
@@ -83,17 +101,25 @@ const AppointmentDetailsDoctor = () => {
               <p className='font-semibold text-left'>বয়সঃ <span className='font-nato font-normal'>{age} বছর</span></p>
               <p className='font-semibold text-left'>জেন্ডারঃ <span className='font-nato font-normal'>{gender}</span></p>
               <p className='font-semibold text-left'>ব্লাড গ্রুপঃ <span className='font-nato font-normal'>{bloodGroup}</span></p>
-             
               <p className='font-semibold text-left'>পেশাঃ <span className='font-nato font-normal'>{profession}</span></p>
               <p className='font-semibold  text-left'>প্রতিষ্ঠানঃ <span className='font-nato font-normal'>{institute}</span></p>
               <p className='font-semibold  text-left'>সমস্যা/রোগের বিবরণঃ <span className='font-nato font-normal'>{problem}</span></p>
+            </div>
+
+            <div className='flex mt-4'>
+              <button
+                onClick={handleDownloadPrescription}
+                className='flex-1 bg-[#007AF5] text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-600 transition'
+              >
+                প্রেসক্রিপশন ডাউনলোড করুন
+              </button>
             </div>
           </div>
 
           {/* Action Buttons */}
           <div className='flex gap-4 mt-6'>
             <button
-              onClick={() => navigate(`/doctorDashboard/prescription/${aID}`)}
+              onClick={() => navigate(`/doctorDashboard/createPrescription/${aID}`)}
               className='flex-1 bg-[#007AF5] text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-600 transition'
             >
               প্রেসক্রিপশন লিখুন

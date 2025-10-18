@@ -4,11 +4,11 @@ import AppointmentCard2 from "../../components/cards/AppointmentCard2";
 
 const DoctorAppointment = () => {
     
-    const [activeTab, setActiveTab] = useState("upcoming"); // "upcoming" or "completed"
+    const [activeTab, setActiveTab] = useState("upcoming"); 
 
   const appointments = JSON.parse(localStorage.getItem("appointments") || "[]");
 
-  // Filter based on status instead of date
+ 
   const upcoming = appointments.filter(a => a.status === "upcoming");
   const completed = appointments.filter(a => a.status === "completed");
 
@@ -27,7 +27,7 @@ const DoctorAppointment = () => {
        <div className="min-h-screen bg-[#EFF7FE] p-4 rounded-md">
       
       <div className="bg-white rounded-md m-0 p-4">
-        {/* Tabs */}
+        {/*Appointment Type Tabs */}
         <div className="flex gap-8 mb-2 p-8">
           <button
             className={`m-0 px-4 py-2 rounded-md font-semibold ${
@@ -51,7 +51,7 @@ const DoctorAppointment = () => {
           </button>
         </div>
 
-        {/* Appointment List */}
+        {/* Appointment List Showing */}
         <div className="space-y-4">{renderAppointments()}</div>
       </div>
     </div>

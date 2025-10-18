@@ -51,12 +51,16 @@ import AdminResource from '../pages/adminPages/AdminResource';
 import UploadResource from '../pages/adminPages/UploadResource';
 import AdminHelp from '../pages/adminPages/AdminHelp';
 import Payout from '../pages/adminPages/Payout';
+import CreatePrescription from '../pages/doctorPages/CreatePrescription';
+import TestQuestion from '../pages/testPages/TestQuestion';
+import ErrorPage from '../ErrorPage';
 
 
 const routes = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -97,6 +101,10 @@ const routes = createBrowserRouter([
                     {
                         path: 'assessment',
                         element: <Assessment></Assessment>,
+                    },
+                    {
+                        path: 'assessment/:testid',
+                        element: <TestQuestion></TestQuestion>
                     },
                     {
                         path: 'appointment',
@@ -145,6 +153,9 @@ const routes = createBrowserRouter([
                         path: 'appointmentForm/:doctorID',
                         element: <AppointmentForm></AppointmentForm>,
                         loader: TwoLoader
+                    },
+                    {
+                        path: 'testList'
                     }
 
 
@@ -236,7 +247,11 @@ const routes = createBrowserRouter([
                     {
                         path: 'doctorProfile',
                         element: <DoctorProfile></DoctorProfile>
-                    }
+                    },
+                    {
+                        path: 'createPrescription/:aID',
+                        element: <CreatePrescription></CreatePrescription>
+                    },
                 ]
                 ,
             },

@@ -19,14 +19,15 @@ const SupportCard = ({ title, role, desc, cta, index = 0 }) => {
       whileInView="visible"
       viewport={{ once: true }}
       variants={cardVariants}
-      className={`p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow bg-white/95 ${accent} border-l-4`}
+      className={`p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow bg-white/95`}
     >
+      <div></div>
       <div className="font-semibold text-xl text-gray-900">{title}</div>
       <div className="text-sm text-gray-600">{role}</div>
       <div className="mt-2 text-md text-gray-700">{desc}</div>
       {cta && (
         <div className="mt-3">
-          <Link to={cta.link} className="text-sm text-blue-600 hover:underline">
+          <Link to={cta.link} className="text-lg text-blue-600 hover:underline">
             {cta.label}
           </Link>
         </div>

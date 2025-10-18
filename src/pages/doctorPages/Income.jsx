@@ -7,7 +7,7 @@ const Income = () => {
   const [totalIncome, setTotalIncome] = useState(0);
   const [netIncome, setNetIncome] = useState(0);
   const [payouts, setPayouts] = useState([]);
-  const [totalRecieved, setTotalReceived] = useState(3600);
+  const [totalRecieved, setTotalReceived] = useState(0);
 
   useEffect(() => {
     // Load doctor info
@@ -44,6 +44,12 @@ const Income = () => {
       { date: "2025-02-14", method: "bKash", transactionId: "Tsxkajhj12", amount: 2400, note: "গত ৭ দিনের ইনকাম দেয়া হয়েছে" },
       { date: "2025-09-02", method: "bKash", transactionId: "Tsxkajhj89", amount: 1200, note: "গত ৭ দিনের ইনকাম দেয়া হয়েছে" },
     ];
+    const tReceived = examplePayouts.reduce(
+      (sum, a) =>
+        sum + (Number(a.amount) || 0),
+      0
+    ); 
+    setTotalReceived(tReceived);
     setPayouts(examplePayouts);
   }, []);
 
@@ -106,7 +112,7 @@ const Income = () => {
 
           <div className="overflow-x-auto bg-white rounded-md shadow-md border border-gray-200">
             <table className="table w-full">
-              <thead className="bg-green-100 text-gray-700">
+              <thead className="bg-blue-100 text-gray-700">
                 <tr>
                   <th>তারিখ</th>
                   <th>রোগীর নাম</th>
@@ -128,7 +134,7 @@ const Income = () => {
                     const deduction = fee * 0.2;
                     const net = fee - deduction;
                     return (
-                      <tr key={index} className="hover:bg-green-50">
+                      <tr key={index} className="hover:bg-blue-50">
                         <td>{app.date}</td>
                         <td>{app.name}</td>
                         <td>৳ {fee}</td>
@@ -151,7 +157,7 @@ const Income = () => {
 
           <div className="overflow-x-auto bg-white rounded-md shadow-md border border-gray-200">
             <table className="table w-full">
-              <thead className="bg-gray-100 text-gray-700">
+              <thead className="bg-blue-100 text-gray-700">
                 <tr>
                   <th>তারিখ</th>
                   <th>মাধ্যম</th>
@@ -169,7 +175,7 @@ const Income = () => {
                   </tr>
                 ) : (
                   payouts.map((p, i) => (
-                    <tr key={i} className="hover:bg-gray-50 text-center">
+                    <tr key={i} className="hover:bg-blue-50 text-center">
                       <td className="text-left">{p.date}</td>
                       <td className="text-left">{p.method}</td>
                       <td className="text-left">{p.transactionId}</td>

@@ -6,13 +6,13 @@ const DoctorHelp = () => {
   const [questions, setQuestions] = useState([]);
   const [replyText, setReplyText] = useState({});
 
-  // Load questions from localStorage
+  
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("helpQuestions")) || [];
     setQuestions(stored);
   }, []);
 
-  // Handle reply submission
+
   const handleReply = (id) => {
     if (!replyText[id]?.trim()) return;
 
@@ -52,7 +52,7 @@ const DoctorHelp = () => {
 
                 {q.reply ? (
                   <div className="bg-[#EFF7FE] p-3 rounded-md">
-                    <h3 className="font-semibold text-green-700 mb-1 text-left">
+                    <h3 className="font-semibold text-blue-700 mb-1 text-left">
                       আপনার উত্তর:
                     </h3>
                     <p className="text-left">{q.reply}</p>
