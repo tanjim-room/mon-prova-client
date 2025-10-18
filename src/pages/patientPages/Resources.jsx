@@ -120,7 +120,7 @@ const Resources = () => {
           <h2 className='text-xl text-gray-800 p-4 mb-8 font-bold text-center rounded-md bg-[#EFF7FE] border'>
             রিসোর্স সমুহ
           </h2>
-        {/* Tab */}
+        {/* Video Blog Tab */}
         <div className="flex gap-4 mb-8">
           <button
             className={`px-4 py-2 rounded-lg font-semibold ${

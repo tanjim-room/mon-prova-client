@@ -52,7 +52,7 @@ const DoctorRegister = () => {
     const handleRegister = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            // Simulate successful registration
+            // Successful registration logic here
             navigate("/doctorDashboard");
         }
     };
@@ -61,7 +61,7 @@ const DoctorRegister = () => {
         <div className="min-h-[850px] flex items-center justify-center bg-gray-100 rounded-lg">
             <div className="bg-white shadow-xl rounded-2xl overflow-hidden w-[900px] grid grid-cols-1 md:grid-cols-2">
 
-                {/* Left Side - Doctor Register Form */}
+                {/* Left Side Doctor Register Form */}
                 <div className="flex flex-col justify-center px-10 py-12">
                     <div className='relative flex justify-center mb-4'>
                         <Logo />
@@ -93,7 +93,7 @@ const DoctorRegister = () => {
                                 onChange={(e) => setEmail(e.target.value)}
                                 className={`rounded-lg py-2 px-4 w-full border-2 ${errors.email ? 'border-red-400' : 'border-gray-300'}`}
                             />
-                            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+                            {errors.email && <p className="text-red-500 text-sm mt-1 text-left">{errors.email}</p>}
                         </div>
 
                         {/* Password */}
@@ -105,7 +105,7 @@ const DoctorRegister = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                                 className={`rounded-lg py-2 px-4 w-full border-2 ${errors.password ? 'border-red-400' : 'border-gray-300'}`}
                             />
-                            {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
+                            {errors.password && <p className="text-red-500 text-sm mt-1 text-left">{errors.password}</p>}
                         </div>
 
                         {/* Specialization */}
@@ -163,7 +163,7 @@ const DoctorRegister = () => {
                     </form>
                 </div>
 
-                {/* Right Side - Animation */}
+                {/* Right Side Animation */}
                 <div className="hidden md:flex items-center justify-center bg-gradient-to-tr from-[#c3e1f1] to-[#76a4f1] p-6">
                     <Lottie animationData={Doctor} />
                 </div>

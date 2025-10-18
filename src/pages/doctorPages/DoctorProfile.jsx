@@ -61,7 +61,7 @@ const DoctorProfile = () => {
     setFormData({ ...formData, certificates: updated });
   };
 
-  // ✅ Save profile with double confirmation
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -184,7 +184,7 @@ const DoctorProfile = () => {
           )}
         </div>
 
-        {/* Fields with Labels */}
+        {/* Profile Info Field */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label className="label-text font-semibold mb-1 text-left">পূর্ণ নাম</label>
@@ -356,7 +356,7 @@ const DoctorProfile = () => {
           </div>
         </div>
 
-        {/* Certificates */}
+        {/* Certificates Upload Section */}
         <div className="mb-4">
           <label className="label-text font-semibold mb-2">
             সনদপত্র (Certificates)

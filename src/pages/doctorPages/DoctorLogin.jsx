@@ -16,14 +16,13 @@ const DoctorLogin = () => {
     const validateForm = () => {
         const newErrors = {};
 
-        // Email validation
         if (!email.trim()) {
             newErrors.email = "ইমেইল দিন";
         } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             newErrors.email = "সঠিক ইমেইল ঠিকানা দিন";
         }
 
-        // Password validation
+      
         if (!password.trim()) {
             newErrors.password = "পাসওয়ার্ড দিন";
         } else if (password.length < 6) {
@@ -37,7 +36,7 @@ const DoctorLogin = () => {
     const handleLogin = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            // Simulate successful login
+         
             navigate("/doctorDashboard");
         }
     };
@@ -46,19 +45,19 @@ const DoctorLogin = () => {
         <div className="min-h-[950px] flex items-center justify-center bg-gray-100 rounded-lg">
             <div className="bg-white shadow-xl rounded-2xl overflow-hidden w-[900px] grid grid-cols-1 md:grid-cols-2">
                 
-                {/* Left Side - Doctor Login Form */}
+                {/* Left Side Doctor Login Form */}
                 <div className="flex flex-col justify-center px-10 py-12">
                     {/* Logo */}
                     <div className='relative flex justify-center mb-4'>
                         <Logo />
                     </div>
 
-                    {/* Welcome Text */}
+                   
                     <h1 className="text-2xl font-semibold py-2">
                         ডাক্তার লগইন
                     </h1>
 
-                    {/* Login Form */}
+                   
                     <form onSubmit={handleLogin} className="mt-8 space-y-4">
                         <div>
                             <input
@@ -119,7 +118,7 @@ const DoctorLogin = () => {
                     </form>
                 </div>
 
-                {/* Right Side - Animation */}
+                {/* Right Side Animation */}
                 <div className="hidden md:flex items-center justify-center bg-gradient-to-tr from-[#c3e1f1] to-[#76a4f1] p-6">
                     <Lottie animationData={Doctor} />
                 </div>

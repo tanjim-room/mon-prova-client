@@ -20,7 +20,7 @@ const adminMenuItems = [
   { title: "রিসোর্স", link: "/adminDashboard/resources", icon: <FaBookOpen /> },
   { title: "রিসোর্স আপলোড", link: "/adminDashboard/uploadResource", icon: <FaUpload /> },
   { title: "হেল্প সেকশন", link: "/adminDashboard/help", icon: <FaHandsHelping /> },
-  { title: "পেমেন্ট/পেআউট", link: "/adminDashboard/payout", icon: <FaMoneyCheckAlt /> },
+  { title: "পেআউট", link: "/adminDashboard/payout", icon: <FaMoneyCheckAlt /> },
   { title: "লগ আউট", link: "/", icon: <FaSignOutAlt /> },
 ];
 
@@ -53,7 +53,7 @@ const DashboardLayoutAdmin = () => {
                   }`}
                 >
                   <span className="text-xl">{item.icon}</span>
-                  <span>{item.title}</span>
+                  <span className="text-lg">{item.title}</span>
                 </Link>
               </li>
             );

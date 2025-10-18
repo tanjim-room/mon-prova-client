@@ -77,7 +77,7 @@ const AppointmentForm = () => {
             medium: medium
         };
 
-        // Payment popup
+        // Payment Alert
         Swal.fire({
             title: "পেমেন্ট",
             text: `${consultationFee} টাকা প্রদান করুন`,
@@ -87,7 +87,7 @@ const AppointmentForm = () => {
             cancelButtonText: "বাতিল করুন",
         }).then((result) => {
             if (result.isConfirmed) {
-                // Save appointment (local)
+               
                 const existing = JSON.parse(localStorage.getItem("appointments") || "[]");
                 
                 existing.push(appointmentData);
@@ -125,7 +125,7 @@ const AppointmentForm = () => {
 
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
 
-                    {/* Patient Info */}
+                    {/* Patient Info Form */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label className="block mb-1 font-semibold text-left text-[#007AF5]">নাম</label>
@@ -198,7 +198,7 @@ const AppointmentForm = () => {
                     </div>
 
                     <div className='flex gap-12'>
-                        {/* Mode Selection */}
+                      
                         <div className="mb-4">
                             <label className="mr-4 font-semibold">মাধ্যম:</label>
                             <select
@@ -211,7 +211,7 @@ const AppointmentForm = () => {
                             </select>
                         </div>
 
-                        {/* Date Picker */}
+                     
                         <div className="mb-4">
                             <label className="mr-4 font-semibold">তারিখ নির্বাচন করুন:</label>
                             <DatePicker
@@ -222,7 +222,7 @@ const AppointmentForm = () => {
                         </div>
                     </div>
 
-                    {/* Available Time Slots */}
+                    {/* Available Time Slots Showing */}
                     <div>
                         <h3 className="font-semibold mb-2">উপলব্ধ সময়ের স্লট ({dayName}):</h3>
                         {availableSlots.length === 0 ? (

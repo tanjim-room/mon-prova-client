@@ -49,7 +49,7 @@ const features = [
 const PatientDashboard = () => {
   return (
     <div className="grid grid-cols-6 min-h-screen bg-base-200">
-      {/* 🧭 Left Menu (1/4) */}
+      {/* Left Side Menu */}
       <aside className="col-span-1 bg-base-100 shadow-lg p-6 bg-[#EFF7FE]">
         <h2 className="text-2xl font-bold mb-6 text-primary">মেনু</h2>
         <ul className="space-y-2"> 
@@ -66,7 +66,7 @@ const PatientDashboard = () => {
         </ul>
       </aside>
 
-      {/* 📝 Right Content (3/4) */}
+      {/* Right Side Content  */}
       <main className="col-span-5 p-8">
         <h2 className="text-3xl font-bold mb-8 text-primary">
           মানসিক স্বাস্থ্য রিসোর্স

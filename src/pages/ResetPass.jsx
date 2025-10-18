@@ -39,7 +39,7 @@ const ResetPass = () => {
   const handleReset = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      // ✅ Simulate API call or email sending
+      // Reset Email Logic
       Swal.fire({
         icon: "success",
         title: "পাসওয়ার্ড রিসেট ইমেইল পাঠানো হয়েছে",
@@ -56,7 +56,7 @@ const ResetPass = () => {
     <div className="min-h-[950px] flex items-center justify-center bg-gray-100 rounded-lg">
       <div className="bg-white shadow-xl rounded-2xl overflow-hidden w-[850px] grid grid-cols-1 md:grid-cols-2">
 
-        {/* Left Side - Form */}
+        {/* Left Side Reset Form */}
         <div className="flex flex-col justify-center items-center px-10 py-12">
           <div className='relative flex justify-center mb-4'>
             <Logo />
@@ -67,7 +67,7 @@ const ResetPass = () => {
           </h1>
 
           <form onSubmit={handleReset} className="mt-8 space-y-4">
-            {/* Email */}
+            {/* Reset Email */}
             <div>
               <input
                 type="email"
@@ -119,7 +119,7 @@ const ResetPass = () => {
           </form>
         </div>
 
-        {/* Right Side - Animation */}
+        {/* Right Side Animation */}
         <div className="hidden md:flex items-center justify-center bg-gradient-to-tr from-[#c3e1f1] to-[#76a4f1] p-6">
           <Lottie animationData={Doctor} />
         </div>

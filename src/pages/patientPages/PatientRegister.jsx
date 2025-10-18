@@ -43,7 +43,7 @@ const PatientRegister = () => {
         e.preventDefault();
 
         if (validateForm()) {
-            // Simulate successful registration
+            
             navigate("/patientDashboard");
         }
     };
@@ -52,7 +52,7 @@ const PatientRegister = () => {
         <div className="min-h-[950px] flex items-center justify-center bg-gray-100 rounded-lg">
             <div className="bg-white shadow-xl rounded-2xl overflow-hidden w-[900px] grid grid-cols-1 md:grid-cols-2">
                 
-                {/* Left Side - Patient Register Form */}
+                {/* Left Side  Patient Register Form */}
                 <div className="flex flex-col justify-center px-10 py-12">
                     
                     {/* Logo */}
@@ -130,7 +130,7 @@ const PatientRegister = () => {
                     </form>
                 </div>
 
-                {/* Right Side - Animation */}
+                {/* Right Side Animation */}
                 <div className="hidden md:flex items-center justify-center bg-gradient-to-tr from-[#c3e1f1] to-[#76a4f1] p-6">
                     <Lottie animationData={Yoga} />
                 </div>

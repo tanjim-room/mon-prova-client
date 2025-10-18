@@ -3,11 +3,12 @@ import NavBar from "../../components/NavBar";
 import AppointmentCard from "../../components/cards/AppointmentCard";
 
 const Appointment = () => {
+  
   const [activeTab, setActiveTab] = useState("upcoming"); // "upcoming" or "completed"
 
   const appointments = JSON.parse(localStorage.getItem("appointments") || "[]");
 
-  // Filter based on status instead of date
+  // Filter based on status
   const upcoming = appointments.filter(a => a.status === "upcoming");
   const completed = appointments.filter(a => a.status === "completed");
 
@@ -25,7 +26,7 @@ const Appointment = () => {
     <div className="min-h-screen bg-[#EFF7FE] p-4 rounded-md">
       
       <div className="bg-white rounded-md m-0 p-4">
-        {/* Tabs */}
+        {/* Appointment Type Tabs */}
         <div className="flex gap-8 mb-2 p-8">
           <button
             className={`m-0 px-4 py-2 rounded-md font-semibold ${
@@ -49,7 +50,7 @@ const Appointment = () => {
           </button>
         </div>
 
-        {/* Appointment List */}
+        {/* Appointment List Showing*/}
         <div className="space-y-4">{renderAppointments()}</div>
       </div>
     </div>

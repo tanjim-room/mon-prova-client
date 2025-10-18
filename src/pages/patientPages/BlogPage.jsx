@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 
 import { IoArrowBackSharp } from "react-icons/io5";
 
-// Sample blog data
+// blog data
 const blogData = [
   {
     slug: "reduce-stress",
@@ -74,7 +74,7 @@ const blogData = [
 const BlogPage = () => {
   const { slug } = useParams();
 
-  // find blog by slug
+  
   const blog = blogData.find((b) => b.slug === slug);
 
   if (!blog) {

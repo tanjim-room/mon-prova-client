@@ -7,7 +7,7 @@ const Prescription = () => {
   const [prescriptions, setPrescriptions] = useState([]);
 
   useEffect(() => {
-    // Load all prescriptions directly (no login check)
+    // Load all prescriptions 
     const allPrescriptions = JSON.parse(localStorage.getItem("prescriptions") || "[]");
     setPrescriptions(allPrescriptions);
   }, []);

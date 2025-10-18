@@ -7,6 +7,7 @@ const Income = () => {
   const [totalIncome, setTotalIncome] = useState(0);
   const [netIncome, setNetIncome] = useState(0);
   const [payouts, setPayouts] = useState([]);
+  const [totalRecieved, setTotalReceived] = useState(3600);
 
   useEffect(() => {
     // Load doctor info
@@ -38,10 +39,10 @@ const Income = () => {
     setTotalIncome(income);
     setNetIncome(nIncome);
 
-    // Example payout history (you can replace with localStorage later)
+    // Example payout data
     const examplePayouts = [
-      { date: "2025-02-14", method: "bKash", amount: 2400 },
-      { date: "2025-09-02", method: "bKash", amount: 1200 },
+      { date: "2025-02-14", method: "bKash", transactionId: "Tsxkajhj12", amount: 2400, note: "গত ৭ দিনের ইনকাম দেয়া হয়েছে" },
+      { date: "2025-09-02", method: "bKash", transactionId: "Tsxkajhj89", amount: 1200, note: "গত ৭ দিনের ইনকাম দেয়া হয়েছে" },
     ];
     setPayouts(examplePayouts);
   }, []);
@@ -70,14 +71,14 @@ const Income = () => {
 
           <div className="card bg-white shadow-md p-6 rounded-md text-center border border-gray-200">
             <h3 className="text-xl font-semibold text-gray-700">মোট আয়</h3>
-            <p className="text-3xl font-bold text-blue-600 mt-2">
+            <p className="text-3xl font-bold text-purple-600 mt-2">
               ৳ {totalIncome}
             </p>
           </div>
 
           <div className="card bg-white shadow-md p-6 rounded-md text-center border border-gray-200">
             <h3 className="text-xl font-semibold text-gray-700">নিট আয়</h3>
-            <p className="text-3xl font-bold text-green-600 mt-2">
+            <p className="text-3xl font-bold text-blue-600 mt-2">
               ৳ {netIncome}
             </p>
           </div>
@@ -85,12 +86,19 @@ const Income = () => {
           <div className="card bg-white shadow-md p-6 rounded-md text-center border border-gray-200">
             <h3 className="text-xl font-semibold text-gray-700">মোট গ্রহণ</h3>
             <p className="text-3xl font-bold text-green-600 mt-2">
-              ৳ 3600
+              ৳ {totalRecieved}
+            </p>
+          </div>
+
+          <div className="card bg-white shadow-md p-6 rounded-md text-center border border-gray-200">
+            <h3 className="text-xl font-semibold text-gray-700">মোট বাকি</h3>
+            <p className="text-3xl font-bold text-red-600 mt-2">
+              ৳ {netIncome - totalRecieved}
             </p>
           </div>
         </div>
 
-        {/* Payout History (deduction details) */}
+        {/* Payout History Section */}
         <div className="mt-12">
           <h3 className="text-xl font-bold text-gray-800 mb-4 bg-[#EFF7FE] p-3 rounded-md border text-center">
             ইনকাম হিস্টোরি
@@ -135,7 +143,7 @@ const Income = () => {
           </div>
         </div>
  
-        {/* ✅ Payment Received History Table */}
+        {/* Payment Received History Section */}
         <div className="mt-12">
           <h3 className="text-xl font-bold text-gray-800 mb-4 bg-[#EFF7FE] p-3 rounded-md border text-center">
             পেমেন্ট গ্রহণের হিস্টোরি
@@ -147,7 +155,9 @@ const Income = () => {
                 <tr>
                   <th>তারিখ</th>
                   <th>মাধ্যম</th>
+                  <th>ট্রানজেকশন আইডি</th>
                   <th>এমাউন্ট গ্রহণ (৳)</th>
+                  <th>নোট</th>
                 </tr>
               </thead>
               <tbody>
@@ -162,7 +172,9 @@ const Income = () => {
                     <tr key={i} className="hover:bg-gray-50 text-center">
                       <td className="text-left">{p.date}</td>
                       <td className="text-left">{p.method}</td>
+                      <td className="text-left">{p.transactionId}</td>
                       <td className="text-left">৳ {p.amount}</td>
+                      <td className="text-left">{p.note}</td>
                     </tr>
                   ))
                 )}

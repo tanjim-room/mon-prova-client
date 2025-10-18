@@ -112,7 +112,7 @@ const PatientLogin = () => {
                             </Link>
                         </div>
 
-                        {/* Register */}
+                        {/* Register Patient */}
                         <p className="text-sm text-center mt-4">
                             অ্যাকাউন্ট নেই?{" "}
                             <Link to='/patientRegister'>
@@ -124,7 +124,7 @@ const PatientLogin = () => {
                     </form>
                 </div>
 
-                {/* Right Side - Illustration */}
+                {/* Right Side Animation*/}
                 <div className="hidden md:flex items-center justify-center bg-gradient-to-tr from-[#c3e1f1] to-[#76a4f1] p-6">
                     <Lottie animationData={Yoga} />
                 </div>

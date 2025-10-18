@@ -46,6 +46,11 @@ import DashboardLayoutAdmin from '../layouts/DashboardLayoutAdmin';
 import PatientInfo from '../pages/adminPages/PatientInfo';
 import DoctorInfo from '../pages/adminPages/DoctorInfo';
 import AppointmentInfo from '../pages/adminPages/AppointmentInfo';
+import VerifyReguest from '../pages/adminPages/VerifyReguest';
+import AdminResource from '../pages/adminPages/AdminResource';
+import UploadResource from '../pages/adminPages/UploadResource';
+import AdminHelp from '../pages/adminPages/AdminHelp';
+import Payout from '../pages/adminPages/Payout';
 
 
 const routes = createBrowserRouter([
@@ -279,6 +284,26 @@ const routes = createBrowserRouter([
                     {
                         path: 'appointmentInfo',
                         element: <AppointmentInfo></AppointmentInfo>
+                    },
+                    {
+                        path: 'verification',
+                        element: <VerifyReguest></VerifyReguest>,
+                    },
+                    {
+                        path: 'resources',
+                        element: <AdminResource></AdminResource>
+                    },
+                    {
+                        path: 'uploadResource',
+                        element: <UploadResource></UploadResource>,
+                    },
+                    {
+                        path: 'help',
+                        element: <AdminHelp></AdminHelp>
+                    },
+                    {
+                        path: 'payout',
+                        element: <Payout></Payout>
                     }
 
                 ]

@@ -4,7 +4,7 @@ import Button from '../../components/buttons/Button';
 import { div } from 'framer-motion/client';
 
 const PatientProfile = () => {
-    // Initialize the profile data either from localStorage or default values
+    // Profile data
     const initialProfile = JSON.parse(localStorage.getItem("profile")) || {
         fullName: 'রাকিব হোসেন',
         age: '২৩',
@@ -22,7 +22,7 @@ const PatientProfile = () => {
     const [isEditable, setIsEditable] = useState(false);
 
     useEffect(() => {
-        // Fetching profile data from localStorage when component mounts
+        
         const savedProfile = JSON.parse(localStorage.getItem("profile"));
         if (savedProfile) {
             setProfile(savedProfile);
@@ -47,7 +47,7 @@ const PatientProfile = () => {
 
     const handleSave = (e) => {
         e.preventDefault();
-        localStorage.setItem("profile", JSON.stringify(profile)); // Saving profile data to localStorage
+        localStorage.setItem("profile", JSON.stringify(profile)); 
         setIsEditable(false);
     };
 
@@ -80,7 +80,7 @@ const PatientProfile = () => {
                                     <input
                                         type="file"
                                         onChange={handleFileChange}
-                                        disabled={!isEditable} // Disabled when not in edit mode
+                                        disabled={!isEditable}
                                         className="file-input file-input-bordered w-full"
                                     />
                                 </div>
@@ -96,7 +96,7 @@ const PatientProfile = () => {
                                         value={profile.fullName}
                                         onChange={handleInputChange}
                                         className="input input-bordered w-full"
-                                        disabled={!isEditable} // Disabled when not in edit mode
+                                        disabled={!isEditable} 
                                     />
                                 </div>
                                 <div>
@@ -107,7 +107,7 @@ const PatientProfile = () => {
                                         value={profile.age}
                                         onChange={handleInputChange}
                                         className="input input-bordered w-full"
-                                        disabled={!isEditable} // Disabled when not in edit mode
+                                        disabled={!isEditable} 
                                     />
                                 </div>
                                 <div>
@@ -117,7 +117,7 @@ const PatientProfile = () => {
                                         value={profile.gender}
                                         onChange={handleInputChange}
                                         className="select select-bordered w-full"
-                                        disabled={!isEditable} // Disabled when not in edit mode
+                                        disabled={!isEditable} 
                                     >
                                         <option value="">জেন্ডার নির্বাচন করুন</option>
                                         <option value="Male">পুরুষ</option>
@@ -133,7 +133,7 @@ const PatientProfile = () => {
                                         value={profile.phone}
                                         onChange={handleInputChange}
                                         className="input input-bordered w-full"
-                                        disabled={!isEditable} // Disabled when not in edit mode
+                                        disabled={!isEditable} 
                                     />
                                 </div>
                                 <div>
@@ -144,7 +144,7 @@ const PatientProfile = () => {
                                         value={profile.email}
                                         onChange={handleInputChange}
                                         className="input input-bordered w-full"
-                                        disabled={!isEditable} // Disabled when not in edit mode
+                                        disabled={!isEditable} 
                                     />
                                 </div>
                                 <div>
@@ -154,7 +154,7 @@ const PatientProfile = () => {
                                         value={profile.bloodGroup}
                                         onChange={handleInputChange}
                                         className="select select-bordered w-full"
-                                        disabled={!isEditable} // Disabled when not in edit mode
+                                        disabled={!isEditable} 
                                     >
                                         <option value="">রক্তের গ্রুপ নির্বাচন করুন</option>
                                         <option value="A+">A+</option>
@@ -174,7 +174,7 @@ const PatientProfile = () => {
                                         value={profile.address}
                                         onChange={handleInputChange}
                                         className="textarea textarea-bordered w-full"
-                                        disabled={!isEditable} // Disabled when not in edit mode
+                                        disabled={!isEditable} 
                                     />
                                 </div>
                                 <div>
@@ -185,7 +185,7 @@ const PatientProfile = () => {
                                         value={profile.emergencyContact}
                                         onChange={handleInputChange}
                                         className="input input-bordered w-full"
-                                        disabled={!isEditable} // Disabled when not in edit mode
+                                        disabled={!isEditable} 
                                     />
                                 </div>
                                 <div>
@@ -196,12 +196,12 @@ const PatientProfile = () => {
                                         value={profile.profession}
                                         onChange={handleInputChange}
                                         className="input input-bordered w-full"
-                                        disabled={!isEditable} // Disabled when not in edit mode
+                                        disabled={!isEditable} 
                                     />
                                 </div>
                             </div>
 
-                            {/* Buttons */}
+                            {/* Buttons for Profile Save & Edit*/}
                             <div className="mt-6 text-center space-y-4">
                                 {isEditable ? (
                                     <Button type="submit" text="প্রোফাইল সংরক্ষণ করুন" />
@@ -210,7 +210,7 @@ const PatientProfile = () => {
                                         <Button
 
                                             text="এডিট প্রোফাইল"
-                                        // Enable edit mode
+                                        
                                         />
                                     </div>
 
@@ -219,7 +219,7 @@ const PatientProfile = () => {
                                     <Button
                                         type="button"
                                         text="ক্যানসেল"
-                                        onClick={() => setIsEditable(false)} // Disable edit mode
+                                        onClick={() => setIsEditable(false)} 
                                         className="mt-2"
                                     />
                                 )}

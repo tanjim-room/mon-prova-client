@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-// For now we'll use a local JSON file (doctorDashboard.json) in public folder as a data source
+// For now use a local JSON file (doctorDashboard.json) in public folder as a data source
 const AdminDoctors = () => {
   const [doctors, setDoctors] = useState([]);
 

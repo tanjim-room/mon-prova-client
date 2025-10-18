@@ -21,6 +21,7 @@ const Schedule = () => {
   };
 
   const [mode, setMode] = useState("অনলাইন");
+
   // selectedSlots will be { "Monday-অনলাইন": ["09:00 - 09:30", ...], ... }
   const [selectedSlots, setSelectedSlots] = useState({});
 
@@ -65,7 +66,6 @@ const Schedule = () => {
           </h2>
         
 
-        {/* Mode Selector */}
         <div className="flex justify-center mb-6">
           <select
             className="select select-bordered w-52"
