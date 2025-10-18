@@ -29,7 +29,6 @@ const menuItems = [
 const DashboardLayout = () => {
   const initialProfile = JSON.parse(localStorage.getItem("profile")) || {
     fullName: "রাকিব হোসেন",
-    
     age: "২৩",
     gender: "পুরুষ",
     phone: "০১৭১২৩৪৫৬৭৮",
@@ -43,20 +42,17 @@ const DashboardLayout = () => {
 
   const [profile, setProfile] = useState(initialProfile);
   const { fullName } = profile;
-
-  const location = useLocation(); // 🔑 hook to detect current path
+  const location = useLocation();
 
   useEffect(() => {
     const savedProfile = JSON.parse(localStorage.getItem("profile"));
-    if (savedProfile) {
-      setProfile(savedProfile);
-    }
+    if (savedProfile) setProfile(savedProfile);
   }, []);
 
   return (
-    <div className="grid grid-cols-6">
+    <div className="flex h-screen overflow-hidden">
       {/* Sidebar */}
-      <aside className="col-span-1 bg-white shadow-lg p-6">
+      <aside className="w-1/5 bg-white shadow-lg p-6 fixed h-full overflow-y-auto">
         <div className="mb-12 bg-[#EFF7FE] rounded-md py-4 px-4">
           <h2 className="text-xl font-bold text-[#E8594A] font-nato text-left">{fullName}</h2>
           <p className="text-left text-md">রোগীর ড্যাশবোর্ড</p>
@@ -64,7 +60,7 @@ const DashboardLayout = () => {
 
         <ul className="space-y-4 font-nato">
           {menuItems.map((item, index) => {
-            const isActive = location.pathname === item.link; // check if this menu is active
+            const isActive = location.pathname === item.link;
             return (
               <li key={index} className="border rounded-md">
                 <Link
@@ -85,7 +81,7 @@ const DashboardLayout = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="col-span-5 p-8 bg-[#EFF7FE] backdrop-blur-sm">
+      <main className="ml-[20%] flex-1 p-8 bg-[#EFF7FE] overflow-y-auto h-screen">
         <Outlet />
       </main>
     </div>

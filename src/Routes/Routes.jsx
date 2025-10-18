@@ -40,6 +40,12 @@ import DashboardLayout from '../layouts/DashboardLayout';
 import DashboardLayoutDoctor from '../layouts/DashboardLayoutDoctor';
 import HomePatient from '../pages/HomePatient';
 import HomeDoctor from '../pages/HomeDoctor';
+import ResetPass from '../pages/ResetPass';
+import ResetPassPatient from '../pages/ResetPassPatient';
+import DashboardLayoutAdmin from '../layouts/DashboardLayoutAdmin';
+import PatientInfo from '../pages/adminPages/PatientInfo';
+import DoctorInfo from '../pages/adminPages/DoctorInfo';
+import AppointmentInfo from '../pages/adminPages/AppointmentInfo';
 
 
 const routes = createBrowserRouter([
@@ -66,6 +72,14 @@ const routes = createBrowserRouter([
             {
                 path: 'doctorRegister',
                 element: <DoctorRegister></DoctorRegister>
+            },
+            {
+                path: 'resetPass',
+                element: <ResetPass></ResetPass>
+            },
+            {
+                path: 'resetPassPatient',
+                element: <ResetPassPatient></ResetPassPatient>
             },
             {
                 path: '/patientDashboard',
@@ -251,8 +265,23 @@ const routes = createBrowserRouter([
             },
             // Admin routes
             {
-                path: 'admin',
-                element: <AdminDashboard></AdminDashboard>
+                path: '/adminDashboard',
+                element: <DashboardLayoutAdmin></DashboardLayoutAdmin>,
+                children: [
+                    {
+                        path: 'patientInfo',
+                        element: <PatientInfo></PatientInfo>
+                    },
+                    {
+                        path: 'doctorInfo',
+                        element: <DoctorInfo></DoctorInfo>
+                    },
+                    {
+                        path: 'appointmentInfo',
+                        element: <AppointmentInfo></AppointmentInfo>
+                    }
+
+                ]
             },
             {
                 path: 'admin/doctors',
